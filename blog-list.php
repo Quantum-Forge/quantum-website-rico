@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/nile_icons.css">
     <!-- main style -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/colors/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- Nile Slider -->
     <link rel="stylesheet" href="assets/css/nile-slider.css">
     <!-- elegant icon -->
@@ -143,7 +143,7 @@
 
                                     <div class="media">
                                         <a href="#">
-										<img class="d-flex align-self-start mr-3 width-50px" src="http://placehold.it/200x200" alt="Generic placeholder image">
+										<img class="d-flex align-self-start mr-3 width-50px" src="https://placehold.co/200x200" alt="Generic placeholder image">
 									  </a>
                                         <div class="media-body">
                                             <a href="#" class="close"><i class="fa fa-window-close"></i></a>
@@ -154,7 +154,7 @@
 
                                     <div class="media">
                                         <a href="#">
-										<img class="d-flex align-self-start mr-3 width-50px" src="http://placehold.it/200x200" alt="Generic placeholder image">
+										<img class="d-flex align-self-start mr-3 width-50px" src="https://placehold.co/200x200" alt="Generic placeholder image">
 									  </a>
                                         <div class="media-body">
                                             <a href="#" class="close"><i class="fa fa-window-close"></i></a>
@@ -166,7 +166,7 @@
 
                                     <div class="media">
                                         <a href="#">
-										<img class="d-flex align-self-start mr-3 width-50px" src="http://placehold.it/200x200" alt="Generic placeholder image">
+										<img class="d-flex align-self-start mr-3 width-50px" src="https://placehold.co/200x200" alt="Generic placeholder image">
 									  </a>
                                         <div class="media-body">
                                             <a href="#" class="close"><i class="fa fa-window-close"></i></a>
@@ -233,7 +233,7 @@
                     <!-- Blog item -->
                     <div class="nile-blog-entry layout-2 margin-bottom-35px clearfix">
                         <div class="img-in">
-                            <img src="http://placehold.it/500x500" alt="">
+                            <img src="https://placehold.co/500x500" alt="">
                             <!--  Social -->
                             <ul class="social-media">
                                 <li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -258,7 +258,7 @@
                     <!-- Blog item -->
                     <div class="nile-blog-entry layout-2 margin-bottom-35px clearfix">
                         <div class="img-in">
-                            <img src="http://placehold.it/500x500" alt="">
+                            <img src="https://placehold.co/500x500" alt="">
                             <!--  Social -->
                             <ul class="social-media">
                                 <li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -283,7 +283,7 @@
                     <!-- Blog item -->
                     <div class="nile-blog-entry layout-2 margin-bottom-35px clearfix">
                         <div class="img-in">
-                            <img src="http://placehold.it/500x500" alt="">
+                            <img src="https://placehold.co/500x500" alt="">
                             <!--  Social -->
                             <ul class="social-media">
                                 <li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -308,7 +308,7 @@
                     <!-- Blog item -->
                     <div class="nile-blog-entry layout-2 margin-bottom-35px clearfix">
                         <div class="img-in">
-                            <img src="http://placehold.it/500x500" alt="">
+                            <img src="https://placehold.co/500x500" alt="">
                             <!--  Social -->
                             <ul class="social-media">
                                 <li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -333,7 +333,7 @@
                     <!-- Blog item -->
                     <div class="nile-blog-entry layout-2 margin-bottom-35px clearfix">
                         <div class="img-in">
-                            <img src="http://placehold.it/500x500" alt="">
+                            <img src="https://placehold.co/500x500" alt="">
                             <!--  Social -->
                             <ul class="social-media">
                                 <li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -358,7 +358,7 @@
                     <!-- Blog item -->
                     <div class="nile-blog-entry layout-2 margin-bottom-35px clearfix">
                         <div class="img-in">
-                            <img src="http://placehold.it/500x500" alt="">
+                            <img src="https://placehold.co/500x500" alt="">
                             <!--  Social -->
                             <ul class="social-media">
                                 <li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -415,7 +415,7 @@
 
                             <!-- post item -->
                             <div class="post">
-                                <div class="post-thum"><a href="#"><img src="http://placehold.it/120x120" alt=""></a></div>
+                                <div class="post-thum"><a href="#"><img src="https://placehold.co/120x120" alt=""></a></div>
                                 <div class="date"><span class="icon_clock_alt"></span> May 22, 2018</div>
                                 <a href="#" class="title">7 Ways to Stimulate Creative Thinking</a>
                             </div>
@@ -423,7 +423,7 @@
 
                             <!-- post item -->
                             <div class="post">
-                                <div class="post-thum"><a href="#"><img src="http://placehold.it/120x120" alt=""></a></div>
+                                <div class="post-thum"><a href="#"><img src="https://placehold.co/120x120" alt=""></a></div>
                                 <div class="date"><span class="icon_clock_alt"></span> May 22, 2018</div>
                                 <a href="#" class="title">Fun and Family Stimulates Creative Thinking</a>
                             </div>
@@ -431,7 +431,7 @@
 
                             <!-- post item -->
                             <div class="post">
-                                <div class="post-thum"><a href="#"><img src="http://placehold.it/120x120" alt=""></a></div>
+                                <div class="post-thum"><a href="#"><img src="https://placehold.co/120x120" alt=""></a></div>
                                 <div class="date"><span class="icon_clock_alt"></span> May 22, 2018</div>
                                 <a href="#" class="title">4 Factors to Consider While Choosing Right PRP Kit</a>
                             </div>
@@ -439,7 +439,7 @@
 
                             <!-- post item -->
                             <div class="post">
-                                <div class="post-thum"><a href="#"><img src="http://placehold.it/120x120" alt=""></a></div>
+                                <div class="post-thum"><a href="#"><img src="https://placehold.co/120x120" alt=""></a></div>
                                 <div class="date"><span class="icon_clock_alt"></span> May 22, 2018</div>
                                 <a href="#" class="title">How EcoAllene Can Stimulate Sales of Personalised Pens</a>
                             </div>
@@ -570,7 +570,7 @@
                 <!-- item -->
                 <li>
                     <div class="img_in">
-                        <a href="#"><img src="http://placehold.it/80x80" alt=""></a>
+                        <a href="#"><img src="https://placehold.co/80x80" alt=""></a>
                     </div>
                     <a class="date" href="#"> May 22, 2018</a>
                     <a class="title" href="#">How To Market Your Consulting Business ...</a>
@@ -580,7 +580,7 @@
                 <!-- item -->
                 <li>
                     <div class="img_in">
-                        <a href="#"><img src="http://placehold.it/80x80" alt=""></a>
+                        <a href="#"><img src="https://placehold.co/80x80" alt=""></a>
                     </div>
                     <a class="date" href="#"> May 22, 2018</a>
                     <a class="title" href="#">SAP Business One Technical Versus Functional ...</a>
@@ -590,7 +590,7 @@
                 <!-- item -->
                 <li>
                     <div class="img_in">
-                        <a href="#"><img src="http://placehold.it/80x80" alt=""></a>
+                        <a href="#"><img src="https://placehold.co/80x80" alt=""></a>
                     </div>
                     <a class="date" href="#"> May 22, 2018</a>
                     <a class="title" href="#">How To Choose An IT Consulting Firm</a>
@@ -613,15 +613,15 @@
         <div class="nile-widget layout-1 niletheme_projects_widget">
             <h2 class="title">Our Projects</h2>
             <ul class="projects-feed">
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
             </ul>
         </div>
 

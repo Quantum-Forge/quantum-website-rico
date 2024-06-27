@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/nile_icons.css">
     <!-- main style -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/colors/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- Nile Slider -->
     <link rel="stylesheet" href="assets/css/nile-slider.css">
     <!-- elegant icon -->
@@ -143,7 +143,7 @@
 
                                     <div class="media">
                                         <a href="#">
-										<img class="d-flex align-self-start mr-3 width-50px" src="http://placehold.it/200x200" alt="Generic placeholder image">
+										<img class="d-flex align-self-start mr-3 width-50px" src="https://placehold.co/200x200" alt="Generic placeholder image">
 									  </a>
                                         <div class="media-body">
                                             <a href="#" class="close"><i class="fa fa-window-close"></i></a>
@@ -154,7 +154,7 @@
 
                                     <div class="media">
                                         <a href="#">
-										<img class="d-flex align-self-start mr-3 width-50px" src="http://placehold.it/200x200" alt="Generic placeholder image">
+										<img class="d-flex align-self-start mr-3 width-50px" src="https://placehold.co/200x200" alt="Generic placeholder image">
 									  </a>
                                         <div class="media-body">
                                             <a href="#" class="close"><i class="fa fa-window-close"></i></a>
@@ -166,7 +166,7 @@
 
                                     <div class="media">
                                         <a href="#">
-										<img class="d-flex align-self-start mr-3 width-50px" src="http://placehold.it/200x200" alt="Generic placeholder image">
+										<img class="d-flex align-self-start mr-3 width-50px" src="https://placehold.co/200x200" alt="Generic placeholder image">
 									  </a>
                                         <div class="media-body">
                                             <a href="#" class="close"><i class="fa fa-window-close"></i></a>
@@ -326,7 +326,7 @@
             <div class="row no-gutters">
                 <div class="col-lg-5">
                     <div class="fizo-image layout-1">
-                        <img src="http://placehold.it/650x830" alt="">
+                        <img src="https://placehold.co/650x830" alt="">
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
@@ -376,25 +376,25 @@
             </div>
             <div class="testimonial-slider owl-carousel owl-theme">
                 <div class="fizo-testimonial layout-1">
-                    <div class="img-in"><img src="http://placehold.it/100x100" alt=""></div>
+                    <div class="img-in"><img src="https://placehold.co/100x100" alt=""></div>
                     <div class="content">Fizo joined our proposal team and was on-board from start to finish. They were a fundamental part of the team and handled our every request with ! </div>
                     <h4 class="name">Rabie Elkheir</h4>
                     <div class="dis">Slaim Co .ltd</div>
                 </div>
                 <div class="fizo-testimonial layout-1">
-                    <div class="img-in"><img src="http://placehold.it/100x100" alt=""></div>
+                    <div class="img-in"><img src="https://placehold.co/100x100" alt=""></div>
                     <div class="content">Fizo joined our proposal team and was on-board from start to finish. They were a fundamental part of the team and handled our every request with ! </div>
                     <h4 class="name">Rabie Elkheir</h4>
                     <div class="dis">Slaim Co .ltd</div>
                 </div>
                 <div class="fizo-testimonial layout-1">
-                    <div class="img-in"><img src="http://placehold.it/100x100" alt=""></div>
+                    <div class="img-in"><img src="https://placehold.co/100x100" alt=""></div>
                     <div class="content">Fizo joined our proposal team and was on-board from start to finish. They were a fundamental part of the team and handled our every request with ! </div>
                     <h4 class="name">Rabie Elkheir</h4>
                     <div class="dis">Slaim Co .ltd</div>
                 </div>
                 <div class="fizo-testimonial layout-1">
-                    <div class="img-in"><img src="http://placehold.it/100x100" alt=""></div>
+                    <div class="img-in"><img src="https://placehold.co/100x100" alt=""></div>
                     <div class="content">Fizo joined our proposal team and was on-board from start to finish. They were a fundamental part of the team and handled our every request with ! </div>
                     <h4 class="name">Rabie Elkheir</h4>
                     <div class="dis">Slaim Co .ltd</div>
@@ -493,7 +493,7 @@
                 <!-- item -->
                 <li>
                     <div class="img_in">
-                        <a href="#"><img src="http://placehold.it/80x80" alt=""></a>
+                        <a href="#"><img src="https://placehold.co/80x80" alt=""></a>
                     </div>
                     <a class="date" href="#"> May 22, 2018</a>
                     <a class="title" href="#">How To Market Your Consulting Business ...</a>
@@ -503,7 +503,7 @@
                 <!-- item -->
                 <li>
                     <div class="img_in">
-                        <a href="#"><img src="http://placehold.it/80x80" alt=""></a>
+                        <a href="#"><img src="https://placehold.co/80x80" alt=""></a>
                     </div>
                     <a class="date" href="#"> May 22, 2018</a>
                     <a class="title" href="#">SAP Business One Technical Versus Functional ...</a>
@@ -513,7 +513,7 @@
                 <!-- item -->
                 <li>
                     <div class="img_in">
-                        <a href="#"><img src="http://placehold.it/80x80" alt=""></a>
+                        <a href="#"><img src="https://placehold.co/80x80" alt=""></a>
                     </div>
                     <a class="date" href="#"> May 22, 2018</a>
                     <a class="title" href="#">How To Choose An IT Consulting Firm</a>
@@ -536,15 +536,15 @@
         <div class="nile-widget layout-1 niletheme_projects_widget">
             <h2 class="title">Our Projects</h2>
             <ul class="projects-feed">
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
             </ul>
         </div>
 

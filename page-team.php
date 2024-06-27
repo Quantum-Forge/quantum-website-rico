@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/nile_icons.css">
     <!-- main style -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/colors/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- Nile Slider -->
     <link rel="stylesheet" href="assets/css/nile-slider.css">
     <!-- elegant icon -->
@@ -143,7 +143,7 @@
 
                                     <div class="media">
                                         <a href="#">
-										<img class="d-flex align-self-start mr-3 width-50px" src="http://placehold.it/200x200" alt="Generic placeholder image">
+										<img class="d-flex align-self-start mr-3 width-50px" src="https://placehold.co/200x200" alt="Generic placeholder image">
 									  </a>
                                         <div class="media-body">
                                             <a href="#" class="close"><i class="fa fa-window-close"></i></a>
@@ -154,7 +154,7 @@
 
                                     <div class="media">
                                         <a href="#">
-										<img class="d-flex align-self-start mr-3 width-50px" src="http://placehold.it/200x200" alt="Generic placeholder image">
+										<img class="d-flex align-self-start mr-3 width-50px" src="https://placehold.co/200x200" alt="Generic placeholder image">
 									  </a>
                                         <div class="media-body">
                                             <a href="#" class="close"><i class="fa fa-window-close"></i></a>
@@ -166,7 +166,7 @@
 
                                     <div class="media">
                                         <a href="#">
-										<img class="d-flex align-self-start mr-3 width-50px" src="http://placehold.it/200x200" alt="Generic placeholder image">
+										<img class="d-flex align-self-start mr-3 width-50px" src="https://placehold.co/200x200" alt="Generic placeholder image">
 									  </a>
                                         <div class="media-body">
                                             <a href="#" class="close"><i class="fa fa-window-close"></i></a>
@@ -234,7 +234,7 @@
                 <div class="col-lg-4">
                     <div class="fizo-team layout-1">
                         <div class="img-in">
-                            <img src="http://placehold.it/600x700" alt="">
+                            <img src="https://placehold.co/600x700" alt="">
                         </div>
                         <div class="hover">
                             <div class="flex-center">
@@ -257,7 +257,7 @@
                 <div class="col-lg-4">
                     <div class="fizo-team layout-1">
                         <div class="img-in">
-                            <img src="http://placehold.it/600x700" alt="">
+                            <img src="https://placehold.co/600x700" alt="">
                         </div>
                         <div class="hover">
                             <div class="flex-center">
@@ -280,7 +280,7 @@
                 <div class="col-lg-4">
                     <div class="fizo-team layout-1">
                         <div class="img-in">
-                            <img src="http://placehold.it/600x700" alt="">
+                            <img src="https://placehold.co/600x700" alt="">
                         </div>
                         <div class="hover">
                             <div class="flex-center">
@@ -322,7 +322,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="fizo-team layout-2">
                         <div class="img-out">
-                            <img src="http://placehold.it/500x500" alt=""> </div>
+                            <img src="https://placehold.co/500x500" alt=""> </div>
                         <h2 class="name">Salama fadlalla </h2>
                         <div class="dis">Software Developer </div>
                     </div>
@@ -331,7 +331,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="fizo-team layout-2">
                         <div class="img-out">
-                            <img src="http://placehold.it/500x500" alt=""> </div>
+                            <img src="https://placehold.co/500x500" alt=""> </div>
                         <h2 class="name">Salama fadlalla </h2>
                         <div class="dis">Software Developer </div>
                     </div>
@@ -340,7 +340,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="fizo-team layout-2">
                         <div class="img-out">
-                            <img src="http://placehold.it/500x500" alt=""> </div>
+                            <img src="https://placehold.co/500x500" alt=""> </div>
                         <h2 class="name">Salama fadlalla </h2>
                         <div class="dis">Software Developer </div>
                     </div>
@@ -349,7 +349,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="fizo-team layout-2">
                         <div class="img-out">
-                            <img src="http://placehold.it/500x500" alt=""> </div>
+                            <img src="https://placehold.co/500x500" alt=""> </div>
                         <h2 class="name">Salama fadlalla </h2>
                         <div class="dis">Software Developer </div>
                     </div>
@@ -358,7 +358,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="fizo-team layout-2">
                         <div class="img-out">
-                            <img src="http://placehold.it/500x500" alt=""> </div>
+                            <img src="https://placehold.co/500x500" alt=""> </div>
                         <h2 class="name">Salama fadlalla </h2>
                         <div class="dis">Software Developer </div>
                     </div>
@@ -367,7 +367,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="fizo-team layout-2">
                         <div class="img-out">
-                            <img src="http://placehold.it/500x500" alt=""> </div>
+                            <img src="https://placehold.co/500x500" alt=""> </div>
                         <h2 class="name">Salama fadlalla </h2>
                         <div class="dis">Software Developer </div>
                     </div>
@@ -466,7 +466,7 @@
                 <!-- item -->
                 <li>
                     <div class="img_in">
-                        <a href="#"><img src="http://placehold.it/80x80" alt=""></a>
+                        <a href="#"><img src="https://placehold.co/80x80" alt=""></a>
                     </div>
                     <a class="date" href="#"> May 22, 2018</a>
                     <a class="title" href="#">How To Market Your Consulting Business ...</a>
@@ -476,7 +476,7 @@
                 <!-- item -->
                 <li>
                     <div class="img_in">
-                        <a href="#"><img src="http://placehold.it/80x80" alt=""></a>
+                        <a href="#"><img src="https://placehold.co/80x80" alt=""></a>
                     </div>
                     <a class="date" href="#"> May 22, 2018</a>
                     <a class="title" href="#">SAP Business One Technical Versus Functional ...</a>
@@ -486,7 +486,7 @@
                 <!-- item -->
                 <li>
                     <div class="img_in">
-                        <a href="#"><img src="http://placehold.it/80x80" alt=""></a>
+                        <a href="#"><img src="https://placehold.co/80x80" alt=""></a>
                     </div>
                     <a class="date" href="#"> May 22, 2018</a>
                     <a class="title" href="#">How To Choose An IT Consulting Firm</a>
@@ -509,15 +509,15 @@
         <div class="nile-widget layout-1 niletheme_projects_widget">
             <h2 class="title">Our Projects</h2>
             <ul class="projects-feed">
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
             </ul>
         </div>
 

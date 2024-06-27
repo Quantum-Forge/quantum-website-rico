@@ -4,11 +4,6 @@
         "format": "expanded",
         "extensionName": ".css",
         "savePath": "/assets/css"
-      },
-      {
-        "format": "expanded",
-        "extensionName": ".css",
-        "savePath": "/assets/colors"
       }
     ],
     "liveSassCompile.settings.generateMap": true,

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/nile_icons.css">
     <!-- main style -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/colors/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- Nile Slider -->
     <link rel="stylesheet" href="assets/css/nile-slider.css">
     <!-- elegant icon -->
@@ -143,7 +143,7 @@
 
                                     <div class="media">
                                         <a href="#">
-										<img class="d-flex align-self-start mr-3 width-50px" src="http://placehold.it/200x200" alt="Generic placeholder image">
+										<img class="d-flex align-self-start mr-3 width-50px" src="https://placehold.co/200x200" alt="Generic placeholder image">
 									  </a>
                                         <div class="media-body">
                                             <a href="#" class="close"><i class="fa fa-window-close"></i></a>
@@ -154,7 +154,7 @@
 
                                     <div class="media">
                                         <a href="#">
-										<img class="d-flex align-self-start mr-3 width-50px" src="http://placehold.it/200x200" alt="Generic placeholder image">
+										<img class="d-flex align-self-start mr-3 width-50px" src="https://placehold.co/200x200" alt="Generic placeholder image">
 									  </a>
                                         <div class="media-body">
                                             <a href="#" class="close"><i class="fa fa-window-close"></i></a>
@@ -166,7 +166,7 @@
 
                                     <div class="media">
                                         <a href="#">
-										<img class="d-flex align-self-start mr-3 width-50px" src="http://placehold.it/200x200" alt="Generic placeholder image">
+										<img class="d-flex align-self-start mr-3 width-50px" src="https://placehold.co/200x200" alt="Generic placeholder image">
 									  </a>
                                         <div class="media-body">
                                             <a href="#" class="close"><i class="fa fa-window-close"></i></a>
@@ -233,7 +233,7 @@
                     <div class="nile-service layout-1">
                         <div class="icon"><img src="assets/icons/icon-1.svg" alt=""></div>
                         <div class="img-in">
-                            <a href="#"><img src="http://placehold.it/700x700" alt=""></a>
+                            <a href="#"><img src="https://placehold.co/700x700" alt=""></a>
                         </div>
                         <a href="#" class="title">Web Development</a>
                         <div class="wasf">First, we will have a meeting and listen to your wishes & needs. What you want to get from us</div>
@@ -247,7 +247,7 @@
                     <div class="nile-service layout-1">
                         <div class="icon"><img src="assets/icons/icon-2.svg" alt=""></div>
                         <div class="img-in">
-                            <a href="#"><img src="http://placehold.it/500x250" alt=""></a>
+                            <a href="#"><img src="https://placehold.co/500x250" alt=""></a>
                         </div>
                         <a href="#" class="title">Web Development</a>
                         <div class="wasf">First, we will have a meeting and listen to your wishes & needs. What you want to get from us</div>
@@ -261,7 +261,7 @@
                     <div class="nile-service layout-1">
                         <div class="icon"><img src="assets/icons/icon-3.svg" alt=""></div>
                         <div class="img-in">
-                            <a href="#"><img src="http://placehold.it/500x250" alt=""></a>
+                            <a href="#"><img src="https://placehold.co/500x250" alt=""></a>
                         </div>
                         <a href="#" class="title">Web Development</a>
                         <div class="wasf">First, we will have a meeting and listen to your wishes & needs. What you want to get from us</div>
@@ -275,7 +275,7 @@
                     <div class="nile-service layout-1">
                         <div class="icon"><img src="assets/icons/icon-3.svg" alt=""></div>
                         <div class="img-in">
-                            <a href="#"><img src="http://placehold.it/500x250" alt=""></a>
+                            <a href="#"><img src="https://placehold.co/500x250" alt=""></a>
                         </div>
                         <a href="#" class="title">Web Development</a>
                         <div class="wasf">First, we will have a meeting and listen to your wishes & needs. What you want to get from us</div>
@@ -289,7 +289,7 @@
                     <div class="nile-service layout-1">
                         <div class="icon"><img src="assets/icons/icon-2.svg" alt=""></div>
                         <div class="img-in">
-                            <a href="#"><img src="http://placehold.it/500x250" alt=""></a>
+                            <a href="#"><img src="https://placehold.co/500x250" alt=""></a>
                         </div>
                         <a href="#" class="title">Web Development</a>
                         <div class="wasf">First, we will have a meeting and listen to your wishes & needs. What you want to get from us</div>
@@ -303,7 +303,7 @@
                     <div class="nile-service layout-1">
                         <div class="icon"><img src="assets/icons/icon-1.svg" alt=""></div>
                         <div class="img-in">
-                            <a href="#"><img src="http://placehold.it/500x250" alt=""></a>
+                            <a href="#"><img src="https://placehold.co/500x250" alt=""></a>
                         </div>
                         <a href="#" class="title">Web Development</a>
                         <div class="wasf">First, we will have a meeting and listen to your wishes & needs. What you want to get from us</div>
@@ -404,7 +404,7 @@
                 <!-- item -->
                 <li>
                     <div class="img_in">
-                        <a href="#"><img src="http://placehold.it/80x80" alt=""></a>
+                        <a href="#"><img src="https://placehold.co/80x80" alt=""></a>
                     </div>
                     <a class="date" href="#"> May 22, 2018</a>
                     <a class="title" href="#">How To Market Your Consulting Business ...</a>
@@ -414,7 +414,7 @@
                 <!-- item -->
                 <li>
                     <div class="img_in">
-                        <a href="#"><img src="http://placehold.it/80x80" alt=""></a>
+                        <a href="#"><img src="https://placehold.co/80x80" alt=""></a>
                     </div>
                     <a class="date" href="#"> May 22, 2018</a>
                     <a class="title" href="#">SAP Business One Technical Versus Functional ...</a>
@@ -424,7 +424,7 @@
                 <!-- item -->
                 <li>
                     <div class="img_in">
-                        <a href="#"><img src="http://placehold.it/80x80" alt=""></a>
+                        <a href="#"><img src="https://placehold.co/80x80" alt=""></a>
                     </div>
                     <a class="date" href="#"> May 22, 2018</a>
                     <a class="title" href="#">How To Choose An IT Consulting Firm</a>
@@ -447,15 +447,15 @@
         <div class="nile-widget layout-1 niletheme_projects_widget">
             <h2 class="title">Our Projects</h2>
             <ul class="projects-feed">
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
-                <li><a href="#"><img src="http://placehold.it/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
+                <li><a href="#"><img src="https://placehold.co/100x100" alt=""></a></li>
             </ul>
         </div>
 

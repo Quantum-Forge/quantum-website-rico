@@ -1,25 +1,25 @@
 .background-main-color {
-    background-color: #f11852;
+  background-color: #00AEEF;
 }
 
 .background-second-color {
-    background-color: #f0b800;
+  background-color: #FFFFFF;
 }
 
 .section-ba-2 {
-    background-color: #f3f3f3;
-    background-image: url(../../../assets/img/ba_section_2.jpg);
-    background-size: cover;
+  background-color: #f3f3f3;
+  background-image: url(../../../assets/img/ba_section_2.jpg);
+  background-size: cover;
 }
 
 .text-main-color,
 .team.layout-1 .dis,
 .nile-title.layout-1 .sub-title {
-    color: #f11852;
+  color: #00AEEF;
 }
 
 .text-second-color {
-    color: #f0b800;
+  color: #FFFFFF;
 }
 
 .fizo-img-text.layout-1 a.more,
@@ -30,27 +30,23 @@ a.go-top:hover,
 .about-slider .owl-nav button.owl-next:hover,
 header a.model-link span,
 footer.layout-2 ul.social-media li a:hover {
-    background-color: #f11852;
+  background-color: #00AEEF;
 }
 
 .fizo-img-text.layout-1.ba-1:before {
-    background-image: url(http://placehold.it/630x420);
+  background-image: url(https://placehold.co/630x420);
 }
-
 .fizo-img-text.layout-1.ba-2:before {
-    background-image: url(http://placehold.it/630x420);
+  background-image: url(https://placehold.co/630x420);
 }
-
 .fizo-img-text.layout-1.ba-3:before {
-    background-image: url(http://placehold.it/630x420);
+  background-image: url(https://placehold.co/630x420);
 }
 
 .fizo-call-action.layout-1:before {
-    background-image: url(http://placehold.it/1920x1200);
+  background-image: url(https://placehold.co/1920x1200);
 }
 
 .fizo-blog.layout-2 a.title_in:hover {
-    color: #f11852;
-}
-
-/*# sourceMappingURL=color-2.css.map */
+  color: #00AEEF;
+}/*# sourceMappingURL=color-2.css.map */
