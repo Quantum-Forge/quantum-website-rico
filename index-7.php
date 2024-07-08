@@ -59,7 +59,7 @@
                                 <i class="fas fa-map-marker-alt"></i> California, TX 70240
                             </li>
                             <li>
-                                <i class="fas fa-envelope-open"></i> Info@gmail.com
+                                <i class="fas fa-envelope-open"></i> antariksaprakarsautama@gmail.com
                             </li>
                             <li>
                                 <i class="fas fa-phone"></i> +123 456 7890

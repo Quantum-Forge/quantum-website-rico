@@ -46,6 +46,65 @@
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
     <!-- Preloader Ends -->
+    
+     <!-- Start Header Top 
+    ============================================= -->
+    <div class="top-bar-area double-info text-light bg-theme">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 address-info text-left">
+                    <div class="info box">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info">
+                                    <span>Phone</span> +123 456 7890
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-envelope-open"></i>
+                                </div>
+                                <div class="info">
+                                    <span>Email</span> antariksaprakarsautama@gmail.com
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="info">
+                                    <span>Office Hours</span> Monday - Friday 08:00-19:00
+                                </div> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 social text-right">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
 
     <!-- Header 
     ============================================= -->
@@ -97,22 +156,16 @@
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
                         <li>
-                            <a class="smooth-menu" href="#home">Home</a>
+                            <a class="smooth-menu" href="#home">Beranda</a>
                         </li>
                         <li>
-                            <a class="smooth-menu" href="#departments">Departments</a>
+                            <a class="smooth-menu" href="#departments">Produk Kami</a>
                         </li>
                         <li>
-                            <a class="smooth-menu" href="#doctors">Doctors</a>
+                            <a class="smooth-menu" href="#doctors">Tentang Kami</a>
                         </li>
                         <li>
-                            <a class="smooth-menu" href="#gallery">Gallery</a>
-                        </li>
-                        <li>
-                            <a class="smooth-menu" href="#testimonials">Testimonials</a>
-                        </li>
-                        <li>
-                            <a class="smooth-menu" href="#blog">Blog</a>
+                            <a class="smooth-menu" href="#gallery">Kontak Kami</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -122,28 +175,40 @@
             <div class="side">
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
                 <div class="widget">
-                    <h4 class="title">About Us</h4>
-                    <p>
-                        Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind.
-                    </p>
-                </div>
-                <div class="widget">
-                    <h4 class="title">Additional Links</h4>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Register</a></li>
-                    </ul>
-                </div>
-                <div class="widget social">
-                    <h4 class="title">Connect With Us</h4>
-                    <ul class="link">
-                        <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                        <li class="dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                    </ul>
+                    <h4 class="title">Cart</h4>
+                      <!-- cart content -->
+                        <div class="cart-item">
+                            <img src="https://placehold.co/80x100" alt="Product Image" width="80" height="100">
+                            <div class="item-details">
+                                <a href="#" class="item-name">Rico Botol 600 mL CRT</a>
+                                <div class="quantity">
+                                    <button class="quantity-btn" id="decrease" onclick="decreaseValue()">-</button>
+                                    <input type="text" id="quantity" value="1" min="1">
+                                    <button class="quantity-btn" id="increase" onclick="increaseValue()">+</button>
+                                </div>
+                                <span class="item-price">Rp. 999.999.999</span>
+                            </div>
+                            <a href="#" class="remove-item"><i class="fa fa-trash"></i></a>
+                        </div>
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <span>Rp. 999.999.999</span>
+                        </div>
+                        <h4 class="title">Alamat</h4>
+                        <div class="row gutter-1">
+                            <div class="col-sm-6">
+                                  <input type="text" class="form-control" placeholder="nama">  
+                            </div>
+                            <div class="col-sm-6">
+                                  <input type="number" class="form-control" placeholder="phone number">  
+                            </div>
+                            <div class="col-md-12 comments">
+                                <textarea name="" rows="8" class="form-control" placeholder="alamat" id=""></textarea>
+                            </div>
+                        </div>
+                        <div class="cart-actions">
+                            <button class="checkout-btn">Checkout</button>
+                        </div>
                 </div>
             </div>
             <!-- End Side Menu -->

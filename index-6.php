@@ -68,7 +68,7 @@
                                     <i class="fas fa-envelope-open"></i>
                                 </div>
                                 <div class="info">
-                                    <span>Email</span> Info@gmail.com
+                                    <span>Email</span> antariksaprakarsautama@gmail.com
                                 </div>
                             </li>
                             <li>
