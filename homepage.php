@@ -172,18 +172,18 @@
             </div>
 
             <!-- Start Side Menu -->
-            <div class="side">
+            <form class="side">
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
                 <div class="widget">
-                    <h4 class="title">Cart</h4>
-                      <!-- cart content -->
+                     <!-- cart content -->
+                     <h4 class="title">Keranjang</h4>
                         <div class="cart-item">
                             <img src="https://placehold.co/80x100" alt="Product Image" width="80" height="100">
                             <div class="item-details">
-                                <a href="#" class="item-name">Rico Botol 600 mL CRT</a>
+                                <a href="#" class="item-name">Rico Botol 600 mL</a>
                                 <div class="quantity">
                                     <button class="quantity-btn" id="decrease" onclick="decreaseValue()">-</button>
-                                    <input type="text" id="quantity" value="1" min="1">
+                                    <input type="text" readonly id="quantity" value="1" min="1">
                                     <button class="quantity-btn" id="increase" onclick="increaseValue()">+</button>
                                 </div>
                                 <span class="item-price">Rp. 999.999.999</span>
@@ -194,23 +194,29 @@
                             <span>Subtotal:</span>
                             <span>Rp. 999.999.999</span>
                         </div>
-                        <h4 class="title">Alamat</h4>
-                        <div class="row gutter-1">
-                            <div class="col-sm-6">
-                                  <input type="text" class="form-control" placeholder="nama">  
-                            </div>
-                            <div class="col-sm-6">
-                                  <input type="number" class="form-control" placeholder="phone number">  
-                            </div>
-                            <div class="col-md-12 comments">
-                                <textarea name="" rows="8" class="form-control" placeholder="alamat" id=""></textarea>
-                            </div>
-                        </div>
-                        <div class="cart-actions">
-                            <button class="checkout-btn">Checkout</button>
-                        </div>
                 </div>
-            </div>
+                <div class="widget">
+                    <h4 class="title">Keranjang</h4>
+                    <p>No Items !</p>
+                </div>
+                <div class="widget">
+                    <h4 class="title">Alamat</h4>
+                    <div class="row gutter-1">
+                        <div class="col-sm-12">
+                                <input type="text" class="form-control" placeholder="Isi Nama..." required>  
+                        </div>
+                        <div class="col-md-12">
+                                <input type="number" class="form-control" placeholder="Isi Nomor Telfon..." required>  
+                        </div>
+                        <div class="col-md-12 comments">
+                            <textarea name="" rows="8" class="form-control" placeholder="Isi Alamat..." id="" required></textarea>
+                        </div>
+                    </div>
+                    <div class="cart-actions">
+                        <button type="submit" class="checkout-btn">Checkout</button>
+                    </div>  
+                </div>
+            </form>
             <!-- End Side Menu -->
 
         </nav>
@@ -222,7 +228,7 @@
     <!-- Start Banner 
     ============================================= -->
     <div class="banner-area responsive-auto-height text-small">
-        <div class="item shadow dark text-light bg-fixed" style="background-image: url(assets/img/2440x1578.png);">
+        <div class="item shadow theme text-light bg-fixed" style="background-image: url(assets/img/background.jpg);">
             <div class="box-table">
                 <div class="box-cell">
                     <div class="container">
@@ -230,43 +236,40 @@
                             <div class="content double-items">
 
                                 <div class="col-md-7 col-sm-6">
-                                    <h1 data-animation="animated slideInRight">Best care for your <span> Good health</span></h1>
+                                    <h1 data-animation="animated slideInRight">Segarkan Harimu dengan RICO</h1>
                                     <p data-animation="animated slideInUp">
-                                        The ourselves suffering the sincerity. Inhabit her manners adapted age certain. Debating offended at branched striking be subjects.
+                                    Setiap tetes air RICO adalah ciptaan penuh dedikasi untuk kualitas dan keamanan. Melalui proses selektif yang ketat, kami menjamin Anda hanya mendapatkan yang terbaik dari sumber-sumber alam yang murni.
                                     </p>
-                                    <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="#">View Details</a>
+                                    <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="#">Belanja Sekarang</a>
                                 </div>
 
                                 <!-- Start Appoinment Form -->
                                 <div class="col-md-5 col-sm-6 appoinment">
                                     <div class="appoinment-box">
                                         <div class="heading">
-                                            <h2>Make an Appointment</h2>
+                                            <h2>Buat Janji</h2>
                                         </div>
                                         <form action="#">
                                             <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="form-group">
-                                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-12">
+                                            <div class="col-md-12">
                                                     <div class="form-group">
                                                         <select>
-                                                            <option value="1">Male</option>
-                                                            <option value="2">Female</option>
-                                                            <option value="3">Child</option>
+                                                            <option disabled selected>Departemen...</option>
+                                                            <option value="1">Perorangan</option>
+                                                            <option value="2">Perusahaan</option>
+                                                            <option value="4">Organisasi</option>
+                                                            <option value="5">Komunitas</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <select>
-                                                            <option value="1">Department</option>
-                                                            <option value="2">Medecine</option>
-                                                            <option value="4">Dental Care</option>
-                                                            <option value="5">Traumatology</option>
-                                                        </select>
+                                                        <input class="form-control" id="name" name="name" placeholder="Nama..." type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input class="form-control" id="name" name="name" placeholder="Nomor Telfon..." type="text">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
@@ -279,6 +282,7 @@
                                     </div>
                                 </div>
                                 <!-- End Appoinment Form -->
+                                
                             </div>
                         </div>
                     </div>
