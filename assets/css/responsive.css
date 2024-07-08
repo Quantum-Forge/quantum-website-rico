@@ -266,7 +266,7 @@
   }
 
   .top-entry-area .item-box .single-item:nth-child(2n) .item {
-    background: #0cb8b6;
+    background: #004080;
     border: none;
   }
 
@@ -512,7 +512,7 @@
 .top-bar-area.inline .info li {
     display: block;
     align-items: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'roboto', sans-serif;
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #e7e7e7;
@@ -724,7 +724,7 @@
   }
 
   .top-entry-area .item-box .single-item:nth-child(2n) .item {
-    background: #0cb8b6;
+    background: #004080;
     border: none;
   }
 
