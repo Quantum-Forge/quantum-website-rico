@@ -136,7 +136,12 @@
                 <div class="attr-nav">
                     <ul>
                         <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="side-menu"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                        <li class="side-menu">
+                            <a href="#" class="position-relative">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="badge-custom">1</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>        
                 <!-- End Atribute Navigation -->
@@ -180,7 +185,7 @@
                         <div class="cart-item">
                             <img src="https://placehold.co/80x100" alt="Product Image" width="80" height="100">
                             <div class="item-details">
-                                <a href="#" class="item-name">Rico Botol 600 mL</a>
+                                <a href="#" class="item-name">RICO Botol 600 mL</a>
                                 <div class="quantity">
                                     <button class="quantity-btn" id="decrease" onclick="decreaseValue()">-</button>
                                     <input type="text" readonly id="quantity" value="1" min="1">
@@ -195,10 +200,10 @@
                             <span>Rp. 999.999.999</span>
                         </div>
                 </div>
-                <div class="widget">
+                <!-- <div class="widget">
                     <h4 class="title">Keranjang</h4>
                     <p>No Items !</p>
-                </div>
+                </div> -->
                 <div class="widget">
                     <h4 class="title">Alamat</h4>
                     <div class="row gutter-1">
@@ -292,57 +297,114 @@
     </div>
     <!-- End Banner -->
 
-    <!-- Start Services
+     <!-- Start About
     ============================================= -->
-    <div class="services-area inc-icon less-info bg-gray default-padding bottom-less">
+    <div class="about-area default-padding">
         <div class="container">
             <div class="row">
-                <div class="services-items text-center">
-                    <!-- Single Item -->
-                    <div class="col-md-3 col-sm-6 equal-height">
-                        <div class="item">
-                            <a href="#">
-                                <i class="flaticon-doctor-1"></i>
-                                <h4>Advanced Care</h4>
-                            </a>
+                <div class="about-items">
+                    <div class="col-md-6 info">
+                        <h4>Has been working since 2016</h4>
+                        <h2>A Great Place to Work. A Great Place to Receive Care. Leading Medicine.</h2>
+                        <p>
+                            However venture pursuit he am mr cordial. Forming musical am hearing studied be luckily. Ourselves for determine attending how led gentleman sincerity. Valley afford uneasy joy she thrown though bed set. In me forming general prudent on country carried. Behaved an or suppose justice. Seemed whence how son rather easily and change missed.
+                        </p>
+                        <div class="bottom">
+                            <div class="video">
+                                <a href="https://www.youtube.com/watch?v=5vY-D42NFP4" class="popup-youtube relative theme video-play-button item-center">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h4>Let’s see our intro video</h4>
+                                <p>
+                                    If your smile is not becoming to you, then you should be coming to me!
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-3 col-sm-6 equal-height">
-                        <div class="item">
-                            <a href="#">
-                                <i class="flaticon-medicine"></i>
-                                <h4>Respite Care</h4>
-                            </a>
+                    <div class="col-md-6 tabs-items">
+                        <!-- Tab Nav -->
+                        <ul class="nav nav-pills">
+                            <li class="active">
+                                <a data-toggle="tab" href="#tab1" aria-expanded="true">
+                                    <i class="fas fa-notes-medical"></i> Consultation
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#tab2" aria-expanded="false">
+                                    <i class="fas fa-map-marker-alt"></i> Location
+                                </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#tab3" aria-expanded="false">
+                                    <i class="fas fa-clock"></i> Opening Hour
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- End Tab Nav -->
+                        <!-- Start Tab Content -->
+                        <div class="tab-content tab-content-info">
+                            <!-- Single Item -->
+                            <div id="tab1" class="tab-pane fade active in">
+                                <div class="info title">
+                                    <h3>Consulted by experienced doctors</h3>
+                                    <p>
+                                        Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
+                                    </p>
+                                    <p>
+                                        Placing assured be if removed it besides on. Far shed each high read are men over day. Afraid we praise lively he suffer family estate is. Ample order up in of in ready. Timed blind had now those ought set often which. Or snug dull he show more true wish. No at many deny away miss evil. On in so indeed spirit an mother. Amounted old strictly but marianne admitted. People former is remove remain we praise
+                                    </p>
+                                    <a class="btn btn-theme border btn-md" href="#">Make Appoinment</a>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div id="tab2" class="tab-pane fade">
+                                <div class="info title">
+                                    <h3>Our location</h3>
+                                    <p>
+                                        Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
+                                    </p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
+                            <!-- Single Item -->
+                            <div id="tab3" class="tab-pane fade">
+                                <div class="info title">
+                                    <h3>Schedule of working hours</h3>
+                                    <p>
+                                        Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
+                                    </p>
+                                    <ul>
+                                        <li> <span> Mon - Tues :  </span>
+                                          <div class="pull-right"> 6.00 am - 10.00 pm </div>
+                                        </li>
+                                        <li> <span> Wednes - Thurs :</span>
+                                          <div class="pull-right"> 8.00 am - 6.00 pm </div>
+                                        </li>
+                                        <li> <span> Sun : </span>
+                                          <div class="pull-right closed"> Closed </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+
                         </div>
+                        <!-- End Tab Content -->
                     </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-3 col-sm-6 equal-height">
-                        <div class="item">
-                            <a href="#">
-                                <i class="flaticon-checkup"></i>
-                                <h4>Daily Care</h4>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-3 col-sm-6 equal-height">
-                        <div class="item">
-                            <a href="#">
-                                <i class="flaticon-neurology"></i>
-                                <h4>Neuorology Care</h4>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>  
+                </div>
             </div>
         </div>
     </div>
-    <!-- End Services -->
+    <!-- End About -->
+
+
+
     
     <!-- Start Departments
     ============================================= -->
@@ -361,7 +423,7 @@
                             </a>
                         </li>
                         <li>
-                            <a data-toggle="tab" href="#tab2" aria-expanded="false">
+                            <a data-toggle="tab" href="" aria-expanded="false">
                                 Dental Care and Surgery
                             </a>
                         </li>
@@ -396,231 +458,30 @@
                             <div id="tab1" class="tab-pane fade active in">
 
                                 <!-- Start Department Info -->
-                                <div class="col-md-6">
+                                <div class="row">
                                     <div class="info title">
-                                        <div class="thumb">
-                                            <img src="assets/img/1500x700.png" alt="Thumb">
+                                        <div class="thumb col-md-6">
+                                            <img src="https://placehold.co/600x650" alt="Thumb">
                                         </div>
-                                        <h3>Medecine and Health</h3>
-                                        <p>
-                                            Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
-                                        </p>
-                                        <p>
-                                            Placing assured be if removed it besides on. Far shed each high read are men over day.
-                                        </p>
+                                        <div class="col-md-6">
+                                            <h3>Medecine and Health</h3>
+                                            <p>
+                                                Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
+                                            </p>
+                                            <p>
+                                                Placing assured be if removed it besides on. Far shed each high read are men over day.
+                                            </p>
+                                            <a class="btn btn-theme border btn-md" href="#"><i class="fa fa-cart-plus"></i> Add to cart</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- End Department Info -->
 
-                                <!-- Start Opening Hours -->
-                                <div class="col-md-6 opening-hours">
-                                    <div class="opening-info">
-                                        <h4>Opening Hours</h4>
-                                        <ul>
-                                            <li>Sunday <div class="pull-right"> 6.00 am - 10.00 pm </div></li>
-                                            <li>Monday <div class="pull-right"> 8.00 am - 4.00 pm </div></li>
-                                            <li>Tuesday <div class="pull-right"> 9.00 am - 6.00 pm </div></li>
-                                            <li>Wednesday <div class="pull-right"> 10.00 am - 7.00 pm </div></li>
-                                            <li>Thursday <div class="pull-right"> 11.00 am - 9.00 pm </div></li>
-                                            <li>Friday <div class="pull-right"> 12.00 am - 12.00 pm </div></li>
-                                            <li>Saturday <div class="pull-right closed"> Closed </div></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- End Opening Hours -->
-
+                              
                             </div>
                             <!-- End Single Item -->
 
-                            <!-- Single Item -->
-                            <div id="tab2" class="tab-pane fade">
-                                <!-- Start Department Info -->
-                                <div class="col-md-6">
-                                    <div class="info title">
-                                        <div class="thumb">
-                                            <img src="assets/img/1500x700.png" alt="Thumb">
-                                        </div>
-                                        <h3>Dental Care and Surgery</h3>
-                                        <p>
-                                            Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
-                                        </p>
-                                        <p>
-                                            Placing assured be if removed it besides on. Far shed each high read are men over day.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- End Department Info -->
-
-                                <!-- Start Opening Hours -->
-                                <div class="col-md-6 opening-hours">
-                                    <div class="opening-info">
-                                        <h4>Opening Hours</h4>
-                                        <ul>
-                                            <li>Sunday <div class="pull-right"> 6.00 am - 10.00 pm </div></li>
-                                            <li>Monday <div class="pull-right"> 8.00 am - 4.00 pm </div></li>
-                                            <li>Tuesday <div class="pull-right"> 9.00 am - 6.00 pm </div></li>
-                                            <li>Wednesday <div class="pull-right"> 10.00 am - 7.00 pm </div></li>
-                                            <li>Thursday <div class="pull-right"> 11.00 am - 9.00 pm </div></li>
-                                            <li>Friday <div class="pull-right"> 12.00 am - 12.00 pm </div></li>
-                                            <li>Saturday <div class="pull-right closed"> Closed </div></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- End Opening Hours -->
-                            </div>
-                            <!-- End Single Item -->
-
-                            <!-- Single Item -->
-                            <div id="tab3" class="tab-pane fade">
-                                <!-- Start Department Info -->
-                                <div class="col-md-6">
-                                    <div class="info title">
-                                        <div class="thumb">
-                                            <img src="assets/img/1500x700.png" alt="Thumb">
-                                        </div>
-                                        <h3>Eye Treatment</h3>
-                                        <p>
-                                            Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
-                                        </p>
-                                        <p>
-                                            Placing assured be if removed it besides on. Far shed each high read are men over day.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- End Department Info -->
-
-                                <!-- Start Opening Hours -->
-                                <div class="col-md-6 opening-hours">
-                                    <div class="opening-info">
-                                        <h4>Opening Hours</h4>
-                                        <ul>
-                                            <li>Sunday <div class="pull-right"> 6.00 am - 10.00 pm </div></li>
-                                            <li>Monday <div class="pull-right"> 8.00 am - 4.00 pm </div></li>
-                                            <li>Tuesday <div class="pull-right"> 9.00 am - 6.00 pm </div></li>
-                                            <li>Wednesday <div class="pull-right"> 10.00 am - 7.00 pm </div></li>
-                                            <li>Thursday <div class="pull-right"> 11.00 am - 9.00 pm </div></li>
-                                            <li>Friday <div class="pull-right"> 12.00 am - 12.00 pm </div></li>
-                                            <li>Saturday <div class="pull-right closed"> Closed </div></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- End Opening Hours -->
-                            </div>
-                            <!-- End Single Item -->
-
-                            <!-- Single Item -->
-                            <div id="tab4" class="tab-pane fade">
-                                <!-- Start Department Info -->
-                                <div class="col-md-6">
-                                    <div class="info title">
-                                        <div class="thumb">
-                                            <img src="assets/img/1500x700.png" alt="Thumb">
-                                        </div>
-                                        <h3>Children Chare</h3>
-                                        <p>
-                                            Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
-                                        </p>
-                                        <p>
-                                            Placing assured be if removed it besides on. Far shed each high read are men over day.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- End Department Info -->
-
-                                <!-- Start Opening Hours -->
-                                <div class="col-md-6 opening-hours">
-                                    <div class="opening-info">
-                                        <h4>Opening Hours</h4>
-                                        <ul>
-                                            <li>Sunday <div class="pull-right"> 6.00 am - 10.00 pm </div></li>
-                                            <li>Monday <div class="pull-right"> 8.00 am - 4.00 pm </div></li>
-                                            <li>Tuesday <div class="pull-right"> 9.00 am - 6.00 pm </div></li>
-                                            <li>Wednesday <div class="pull-right"> 10.00 am - 7.00 pm </div></li>
-                                            <li>Thursday <div class="pull-right"> 11.00 am - 9.00 pm </div></li>
-                                            <li>Friday <div class="pull-right"> 12.00 am - 12.00 pm </div></li>
-                                            <li>Saturday <div class="pull-right closed"> Closed </div></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- End Opening Hours -->
-                            </div>
-                            <!-- End Single Item -->
-
-                            <!-- Single Item -->
-                            <div id="tab5" class="tab-pane fade">
-                                <!-- Start Department Info -->
-                                <div class="col-md-6">
-                                    <div class="info title">
-                                        <div class="thumb">
-                                            <img src="assets/img/1500x700.png" alt="Thumb">
-                                        </div>
-                                        <h3>Nuclear magnetic</h3>
-                                        <p>
-                                            Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
-                                        </p>
-                                        <p>
-                                            Placing assured be if removed it besides on. Far shed each high read are men over day.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- End Department Info -->
-
-                                <!-- Start Opening Hours -->
-                                <div class="col-md-6 opening-hours">
-                                    <div class="opening-info">
-                                        <h4>Opening Hours</h4>
-                                        <ul>
-                                            <li>Sunday <div class="pull-right"> 6.00 am - 10.00 pm </div></li>
-                                            <li>Monday <div class="pull-right"> 8.00 am - 4.00 pm </div></li>
-                                            <li>Tuesday <div class="pull-right"> 9.00 am - 6.00 pm </div></li>
-                                            <li>Wednesday <div class="pull-right"> 10.00 am - 7.00 pm </div></li>
-                                            <li>Thursday <div class="pull-right"> 11.00 am - 9.00 pm </div></li>
-                                            <li>Friday <div class="pull-right"> 12.00 am - 12.00 pm </div></li>
-                                            <li>Saturday <div class="pull-right closed"> Closed </div></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- End Opening Hours -->
-                            </div>
-                            <!-- End Single Item -->
-
-                            <!-- Single Item -->
-                            <div id="tab6" class="tab-pane fade">
-                                <!-- Start Department Info -->
-                                <div class="col-md-6">
-                                    <div class="info title">
-                                        <div class="thumb">
-                                            <img src="assets/img/1500x700.png" alt="Thumb">
-                                        </div>
-                                        <h3>Traumatology</h3>
-                                        <p>
-                                            Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
-                                        </p>
-                                        <p>
-                                            Placing assured be if removed it besides on. Far shed each high read are men over day.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- End Department Info -->
-
-                                <!-- Start Opening Hours -->
-                                <div class="col-md-6 opening-hours">
-                                    <div class="opening-info">
-                                        <h4>Opening Hours</h4>
-                                        <ul>
-                                            <li>Sunday <div class="pull-right"> 6.00 am - 10.00 pm </div></li>
-                                            <li>Monday <div class="pull-right"> 8.00 am - 4.00 pm </div></li>
-                                            <li>Tuesday <div class="pull-right"> 9.00 am - 6.00 pm </div></li>
-                                            <li>Wednesday <div class="pull-right"> 10.00 am - 7.00 pm </div></li>
-                                            <li>Thursday <div class="pull-right"> 11.00 am - 9.00 pm </div></li>
-                                            <li>Friday <div class="pull-right"> 12.00 am - 12.00 pm </div></li>
-                                            <li>Saturday <div class="pull-right closed"> Closed </div></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- End Opening Hours -->
-                            </div>
-                            <!-- End Single Item -->
+                          
 
                         </div>
                         <!-- End Tab Content -->
@@ -631,14 +492,59 @@
     </div>
     <!-- End Departments -->
 
-    <!-- Start Doctors 
+    <!-- Start Why Chose Us 
     ============================================= -->
-    <div id="doctors" class="doctor-area bg-gray default-padding bottom-less">
+    <div class="chose-us-area">
+        <div class="container-full">
+            <div class="row">
+                <div class="col-md-6 thumb bg-cover" style="background-image: url(assets/img/2440x1578.png);"></div>
+                <div class="col-md-6 info">
+                    <div class="heading">
+                        <h2>Why Chose us</h2>
+                        <p>
+                            Offering confined entrance no. Nay rapturous him see something residence. Highly talked do so vulgar. Her use behaved spirits and natural attempt say feeling. Exquisite mr incommode immediate he something ourselves it of. Law conduct yet chiefly beloved examine village proceed
+                        </p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="info">
+                                <h4>Qualified facilities</h4>
+                                <p>
+                                    Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new. 
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info">
+                                <h4>Top Level Doctors</h4>
+                                <p>
+                                    Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new. 
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info">
+                                <h4>Dedicated patient care</h4>
+                                <p>
+                                    Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new. 
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Why Chose Us -->
+
+     <!-- Start Services 
+    ============================================= -->
+    <div class="services-area inc-icon bg-gray carousel-shadow default-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="site-heading text-center">
-                        <h2>Meet Our <span>Specialists</span></h2>
+                        <h2>Centres of <span>Excellence</span></h2>
                         <p>
                             While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old
                         </p>
@@ -646,364 +552,110 @@
                 </div>
             </div>
             <div class="row">
-                <div class="doctor-items text-center">
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
+                <div class="col-md-12">
+                    <div class="services-items text-center services-carousel owl-carousel owl-theme">
+                        <!-- Single Item -->
                         <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
-                                <div class="overlay">
-                                    <a href="#"><i class="fas fa-plus"></i></a>
-                                </div>
-                                <div class="social">
-                                    <ul>
-                                        <li class="facebook">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li class="linkedin">
-                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="info">
-                                <h4>Jessica Jones</h4>
-                                <h5>Cardiologist</h5>
-                                <div class="appoinment-btn">
-                                    <a href="#">Make appoinment</a>
+                                <h4>
+                                    <a href="#">Body Surgery</a>
+                                </h4>
+                                <div class="overlay">
+                                    <i class="flaticon-medical"></i>
                                 </div>
+                                <p>
+                                    Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth.
+                                </p>
+                                <a class="btn btn-theme border circle btn-md" href="#">Read More</a>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
                         <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
-                                <div class="overlay">
-                                    <a href="#"><i class="fas fa-plus"></i></a>
-                                </div>
-                                <div class="social">
-                                    <ul>
-                                        <li class="facebook">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li class="linkedin">
-                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="info">
-                                <h4>Ahel Natasha</h4>
-                                <h5>Dental surgeon</h5>
-                                <div class="appoinment-btn">
-                                    <a href="#">Make appoinment</a>
+                                <h4>
+                                    <a href="#">Dental Care</a>
+                                </h4>
+                                <div class="overlay">
+                                    <i class="flaticon-anesthesia"></i>
                                 </div>
+                                <p>
+                                    Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth.
+                                </p>
+                                <a class="btn btn-theme border circle btn-md" href="#">Read More</a>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
                         <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
-                                <div class="overlay">
-                                    <a href="#"><i class="fas fa-plus"></i></a>
-                                </div>
-                                <div class="social">
-                                    <ul>
-                                        <li class="facebook">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li class="linkedin">
-                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="info">
-                                <h4>Gabriela Beckett</h4>
-                                <h5>Cosmetic Surgeon</h5>
-                                <div class="appoinment-btn">
-                                    <a href="#">Make appoinment</a>
+                                <h4>
+                                    <a href="#">Eye Care</a>
+                                </h4>
+                                <div class="overlay">
+                                    <i class="flaticon-anatomy"></i>
                                 </div>
+                                <p>
+                                    Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth.
+                                </p>
+                                <a class="btn btn-theme border circle btn-md" href="#">Read More</a>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
                         <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
-                                <div class="overlay">
-                                    <a href="#"><i class="fas fa-plus"></i></a>
-                                </div>
-                                <div class="social">
-                                    <ul>
-                                        <li class="facebook">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li class="linkedin">
-                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="info">
-                                <h4>Jessica Jones</h4>
-                                <h5>Cardiologist</h5>
-                                <div class="appoinment-btn">
-                                    <a href="#">Make appoinment</a>
+                                <h4>
+                                    <a href="#">Blood Cancer</a>
+                                </h4>
+                                <div class="overlay">
+                                    <i class="flaticon-lung-cancer"></i>
                                 </div>
+                                <p>
+                                    Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth.
+                                </p>
+                                <a class="btn btn-theme border circle btn-md" href="#">Read More</a>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
+                        <!-- End Single Item -->
+                        <!-- Single Item -->
                         <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
-                                <div class="overlay">
-                                    <a href="#"><i class="fas fa-plus"></i></a>
-                                </div>
-                                <div class="social">
-                                    <ul>
-                                        <li class="facebook">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li class="linkedin">
-                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="info">
-                                <h4>Ahel Natasha</h4>
-                                <h5>Dental surgeon</h5>
-                                <div class="appoinment-btn">
-                                    <a href="#">Make appoinment</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 col-sm-6 equal-height">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
+                                <h4>
+                                    <a href="#">Neurology Sargery</a>
+                                </h4>
                                 <div class="overlay">
-                                    <a href="#"><i class="fas fa-plus"></i></a>
+                                    <i class="flaticon-thinking"></i>
                                 </div>
-                                <div class="social">
-                                    <ul>
-                                        <li class="facebook">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li class="linkedin">
-                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h4>Gabriela Beckett</h4>
-                                <h5>Cosmetic Surgeon</h5>
-                                <div class="appoinment-btn">
-                                    <a href="#">Make appoinment</a>
-                                </div>
+                                <p>
+                                    Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth.
+                                </p>
+                                <a class="btn btn-theme border circle btn-md" href="#">Read More</a>
                             </div>
                         </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Doctors -->
-
-    <!-- Start Gallery
-    ============================================= -->
-    <div id="gallery" class="gallery-area default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="site-heading text-center">
-                        <h2>Our <span>Environment</span></h2>
-                        <p>
-                            While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-items-area text-center">
-                <div class="row">
-                    <div class="col-md-12 gallery-content">
-                        <div class="mix-item-menu text-center">
-                            <button class="active" data-filter="*">All</button>
-                            <button data-filter=".development">Development</button>
-                            <button data-filter=".consulting">Consulting</button>
-                            <button data-filter=".finance">Finance</button>
-                            <button data-filter=".branding">Branding</button>
-                            <button data-filter=".capital">Capital</button>
-                        </div>
-                        <!-- End Mixitup Nav-->
-
-                        <div class="row magnific-mix-gallery text-center masonary">
-                            <div id="portfolio-grid" class="gallery-items col-3">
-                                <!-- Single Item -->
-                                <div class="pf-item development capital">
-                                    <div class="effect-box">
-                                        <img src="assets/img/800x800.png" alt="thumb">
-                                        <div class="info">
-                                          <h4><a href="#">Empire State</a></h4>
-                                          <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item consulting branding">
-                                    <div class="effect-box">
-                                        <img src="assets/img/800x800.png" alt="thumb">
-                                        <div class="info">
-                                          <h4><a href="#">Empire State</a></h4>
-                                          <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item consulting finance">
-                                    <div class="effect-box">
-                                        <img src="assets/img/800x800.png" alt="thumb">
-                                        <div class="info">
-                                          <h4><a href="#">Empire State</a></h4>
-                                          <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item finance">
-                                    <div class="effect-box">
-                                        <img src="assets/img/800x800.png" alt="thumb">
-                                        <div class="info">
-                                          <h4><a href="#">Empire State</a></h4>
-                                          <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item capital development">
-                                    <div class="effect-box">
-                                        <img src="assets/img/800x800.png" alt="thumb">
-                                        <div class="info">
-                                          <h4><a href="#">Empire State</a></h4>
-                                          <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="pf-item consulting branding">
-                                    <div class="effect-box">
-                                        <img src="assets/img/800x800.png" alt="thumb">
-                                        <div class="info">
-                                          <h4><a href="#">Empire State</a></h4>
-                                          <a href="assets/img/800x800.png" class="item popup-link"><i class="fa fa-plus"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Single Item -->
-                            </div>
-                        </div>
+                        <!-- End Single Item -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Gallery -->
+    <!-- End Services -->
 
-    <!-- Start Fun Factor
-    ============================================= -->
-    <div class="fun-fact-area default-padding shadow light text-center bg-fixed text-light" style="background-image: url(assets/img/2440x1578.png);">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 item">
-                    <div class="fun-fact">
-                        <i class="flaticon-recovered"></i>
-                        <div class="timer" data-to="230" data-speed="5000"></div>
-                        <span class="medium">Satisfied Patients</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 item">
-                    <div class="fun-fact">
-                        <i class="flaticon-doctor"></i>
-                        <div class="timer" data-to="89" data-speed="5000"></div>
-                        <span class="medium">Regular Doctors</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 item">
-                    <div class="fun-fact">
-                        <i class="flaticon-department"></i>
-                        <div class="timer" data-to="50" data-speed="5000"></div>
-                        <span class="medium">Departments</span>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 item">
-                    <div class="fun-fact">
-                        <i class="flaticon-nurse"></i>
-                        <div class="timer" data-to="2348" data-speed="5000"></div>
-                        <span class="medium">Servant</span>
-                    </div>
-                </div>
-            </div>
+ <!-- Start Video BG 
+  ============================================= -->
+  <div class="video-bg-area text-center shadow theme text-light video-bg-live bg-fixed">
+    <div class="video-bg-overlay"></div>
+    <iframe src="https://www.youtube.com/embed/U9N2h3GY7jU" frameborder="0" allowfullscreen></iframe>
+    <div class="container video-bg-content">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Trust Us To Be There To Help All & Make Things Well Again.</h1>
+          <a class="btn btn-theme effect btn-md" href="#">Get a consultant</a>
         </div>
+      </div>
     </div>
-    <!-- End Fun Factor -->
+  </div>
+  <!-- End Video BG -->
 
     <!-- Start Testimonials 
     ============================================= -->
@@ -1207,7 +859,7 @@
 
     <!-- Start Footer 
     ============================================= -->
-    <footer class="bg-dark text-light">
+    <footer class="bg-light text-dark">
         <div class="container">
             <div class="row">
                 <div class="f-items default-padding">
@@ -1371,6 +1023,7 @@
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script src="node_modules/shopify-cartjs/dist/cart.min.js"></script>
+    <script src="node_modules/shopify-cartjs/dist/rivets-cart.min.js"></script>
 </body>
 </html>
