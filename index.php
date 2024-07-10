@@ -141,7 +141,7 @@
                         <li class="side-menu">
                             <a href="#" class="position-relative">
                                 <i class="fa fa-shopping-cart"></i>
-                                <span class="badge-custom">1</span>
+                                <span class="badge-custom">0</span>
                             </a>
                         </li>
                     </ul>
@@ -184,42 +184,28 @@
                 </div><!-- /.navbar-collapse -->
             </div>
 
-            <!-- Start Side Menu -->
+            <!-- Start Cart Menu -->
             <form class="side">
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
                 <div class="widget">
-                     <!-- cart content -->
-                     <h4 class="title">Keranjang</h4>
-                        <div class="cart-item">
-                            <img src="https://placehold.co/80x100" alt="Product Image" width="80" height="100">
-                            <div class="item-details">
-                                <a href="#" class="item-name">RICO Botol 600 mL</a>
-                                <div class="quantity">
-                                    <button class="quantity-btn" id="decrease" onclick="decreaseValue()">-</button>
-                                    <input type="text" readonly id="quantity" value="1" min="1">
-                                    <button class="quantity-btn" id="increase" onclick="increaseValue()">+</button>
-                                </div>
-                                <span class="item-price">Rp. 999.999.999</span>
-                            </div>
-                            <a href="#" class="remove-item"><i class="fa fa-trash"></i></a>
-                        </div>
-                        <div class="subtotal">
-                            <span>Subtotal:</span>
-                            <span>Rp. 999.999.999</span>
-                        </div>
-                </div>
-                <!-- <div class="widget">
+                    <!-- cart content -->
                     <h4 class="title">Keranjang</h4>
-                    <p>No Items !</p>
-                </div> -->
+                    <div id="cart-items">
+                        <!-- Cart items will be dynamically added here -->
+                    </div>
+                    <div class="subtotal">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">Rp. 0</span>
+                    </div>
+                </div>
                 <div class="widget">
                     <h4 class="title">Alamat</h4>
                     <div class="row gutter-1">
                         <div class="col-sm-12">
-                                <input type="text" class="form-control" placeholder="Isi Nama..." required>  
+                            <input type="text" class="form-control" placeholder="Isi Nama..." required>  
                         </div>
                         <div class="col-md-12">
-                                <input type="number" class="form-control" placeholder="Isi Nomor Telfon..." required>  
+                            <input type="number" class="form-control" placeholder="Isi Nomor Telfon..." required>  
                         </div>
                         <div class="col-md-12 comments">
                             <textarea name="" rows="8" class="form-control" placeholder="Isi Alamat..." id="" required></textarea>
@@ -230,7 +216,7 @@
                     </div>  
                 </div>
             </form>
-            <!-- End Side Menu -->
+            <!-- End Cart Menu -->
 
         </nav>
         <!-- End Navigation -->
@@ -411,86 +397,86 @@
     <!-- End About -->
     
     <?php
-// Load JSON data
-$json_data = file_get_contents('product.json');
-$products = json_decode($json_data, true)['products'];
+    // Load JSON data
+    $json_data = file_get_contents('product.json');
+    $products = json_decode($json_data, true)['products'];
 
-// Function to create product tabs
-function create_product_tabs($products) {
-    $tabs = '';
-    foreach ($products as $index => $product) {
-        $active_class = $index === 0 ? 'active' : '';
-        $aria_expanded = $index === 0 ? 'true' : 'false';
-        $product_id = "product" . $product['id'];
-        $tabs .= "
-            <li class=\"$active_class\">
-                <a data-toggle=\"tab\" href=\"#$product_id\" aria-expanded=\"$aria_expanded\">
-                    {$product['name']}
-                </a>
-            </li>
-        ";
+    // Function to create product tabs
+    function create_product_tabs($products) {
+        $tabs = '';
+        foreach ($products as $index => $product) {
+            $active_class = $index === 0 ? 'active' : '';
+            $aria_expanded = $index === 0 ? 'true' : 'false';
+            $product_id = "product" . $product['id'];
+            $tabs .= "
+                <li class=\"$active_class\">
+                    <a data-toggle=\"tab\" href=\"#$product_id\" aria-expanded=\"$aria_expanded\">
+                        {$product['name']}
+                    </a>
+                </li>
+            ";
+        }
+        return $tabs;
     }
-    return $tabs;
-}
 
-// Function to create product contents
-function create_product_contents($products) {
-    $contents = '';
-    foreach ($products as $index => $product) {
-        $active_class = $index === 0 ? 'active in' : 'fade';
-        $product_id = "product" . $product['id'];
-        $price = number_format($product['price'], 0, ',', '.');
-        $contents .= "
-            <div id=\"$product_id\" class=\"tab-pane $active_class\">
-                <div class=\"row\">
-                    <div class=\"info title\">
-                        <div class=\"thumb col-md-6\">
-                            <img src=\"{$product['image']}\" alt=\"Thumb\">
-                        </div>
-                        <div class=\"col-md-6\">
-                            <h3 style=\"margin-bottom: 5px !important;\">{$product['name']}</h3>
-                            <b style=\"color: #004080;\">Rp.$price</b>
-                            <p style=\"margin-top: 12px;\">
-                                {$product['description']}
-                            </p>
-                            <a class=\"btn btn-theme border btn-md\" href=\"#\"><i class=\"fa fa-cart-plus\" style=\"margin-right: 10px;\"></i>Add to cart</a>
+    // Function to create product contents
+    function create_product_contents($products) {
+        $contents = '';
+        foreach ($products as $index => $product) {
+            $active_class = $index === 0 ? 'active in' : 'fade';
+            $product_id = "product" . $product['id'];
+            $price = number_format($product['price'], 0, ',', '.');
+            $contents .= "
+                <div id=\"$product_id\" class=\"tab-pane $active_class\">
+                    <div class=\"row\">
+                        <div class=\"info title\">
+                            <div class=\"thumb col-md-6\">
+                                <img src=\"{$product['image']}\" alt=\"Thumb\">
+                            </div>
+                            <div class=\"col-md-6\">
+                                <h3 style=\"margin-bottom: 5px !important;\">{$product['name']}</h3>
+                                <b style=\"color: #004080;\">Rp.$price</b>
+                                <p style=\"margin-top: 12px;\">
+                                    {$product['description']}
+                                </p>
+                                <a class=\"btn btn-theme border btn-md add-to-cart\" href=\"#\" data-id=\"{$product['id']}\" data-name=\"{$product['name']}\" data-price=\"{$product['price']}\" data-image=\"{$product['image']}\"><i class=\"fa fa-cart-plus\" style=\"margin-right: 10px;\"></i>Add to cart</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        ";
+            ";
+        }
+        return $contents;
     }
-    return $contents;
-}
-?>
+    ?>
 
-<!-- Start Departments -->
-<div id="produk" class="department-tabs default-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 tab-navs">
-                <div class="heading">
-                    <h4>Produk Kami</h4>
-                </div>
-                <!-- Tab Nav -->
-                <ul class="nav nav-pills">
-                    <?= create_product_tabs($products); ?>
-                </ul>
-                <!-- End Tab Nav -->
-            </div>
-            <div class="col-md-9 tab-contents">
-                <div class="row">
-                    <!-- Start Tab Content -->
-                    <div class="tab-content tab-content-info">
-                        <?= create_product_contents($products); ?>
+    <!-- Start Departments -->
+    <div id="produk" class="department-tabs default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 tab-navs">
+                    <div class="heading">
+                        <h4>Produk Kami</h4>
                     </div>
-                    <!-- End Tab Content -->
+                    <!-- Tab Nav -->
+                    <ul class="nav nav-pills">
+                        <?= create_product_tabs($products); ?>
+                    </ul>
+                    <!-- End Tab Nav -->
+                </div>
+                <div class="col-md-9 tab-contents">
+                    <div class="row">
+                        <!-- Start Tab Content -->
+                        <div class="tab-content tab-content-info">
+                            <?= create_product_contents($products); ?>
+                        </div>
+                        <!-- End Tab Content -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- End Departments -->
+    <!-- End Departments -->
 
     
 
@@ -894,6 +880,6 @@ function create_product_contents($products) {
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/jquery.mycart.js"></script>
+  
 </body>
 </html>

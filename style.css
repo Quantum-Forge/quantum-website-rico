@@ -6020,7 +6020,7 @@ footer .footer-bottom .social li a:hover {
 .item-name {
   display: block;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .item-name:hover {
@@ -6083,6 +6083,7 @@ footer .footer-bottom .social li a:hover {
 
 .remove-item {
   color: #000;
+  cursor: pointer;
 }
 
 .subtotal {

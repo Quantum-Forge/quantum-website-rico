@@ -310,6 +310,100 @@
             });
           });
 
+           /* ==================================================
+            Cart Function
+         ===============================================*/
+         let cart = [];
+            function updateCartUI() {
+                const cartItemsContainer = $('#cart-items');
+                const cartSubtotalElement = $('#cart-subtotal');
+                const badgeElement = $('.badge-custom'); // Select the badge element
+                
+                cartItemsContainer.empty();
+                
+                let subtotal = 0;
+                let totalQuantity = 0; // Initialize total quantity
+                
+                cart.forEach(item => {
+                    subtotal += item.price * item.quantity;
+                    totalQuantity += item.quantity; // Sum up the quantity of each item
+                    
+                    const itemElement = `
+                        <div class="cart-item">
+                            <img src="${item.image}" alt="Product Image" width="80" height="100">
+                            <div class="item-details">
+                                <a href="#" class="item-name">${item.name}</a>
+                                <div class="quantity">
+                                    <button class="quantity-btn" onclick="changeQuantity(${item.id}, -1)">-</button>
+                                    <input type="text" readonly value="${item.quantity}" min="1">
+                                    <button class="quantity-btn" onclick="changeQuantity(${item.id}, 1)">+</button>
+                                </div>
+                                <span class="item-price">Rp. ${item.price.toLocaleString('id-ID')}</span>
+                            </div>
+                            <span class="remove-item" onclick="removeFromCart(${item.id})"><i class="fa fa-trash"></i></span>
+                        </div>
+                    `;
+                    cartItemsContainer.append(itemElement);
+                });
+
+                cartSubtotalElement.text(`Rp. ${subtotal.toLocaleString('id-ID')}`);
+                badgeElement.text(totalQuantity); // Update the badge with the total quantity
+            }
+
+     
+         function changeQuantity(productId, delta) {
+             const cartItem = cart.find(item => item.id === productId);
+             if (cartItem) {
+                 cartItem.quantity += delta;
+                 if (cartItem.quantity <= 0) {
+                     removeFromCart(productId);
+                 } else {
+                     updateCartUI();
+                 }
+             }
+         }
+     
+         function removeFromCart(productId) {
+             cart = cart.filter(item => item.id !== productId);
+             updateCartUI();
+             e.preventDefault();
+         }
+     
+         $(document).on('click', '.add-to-cart', function(e) {
+            e.preventDefault();
+            
+            const isSideNavOpen = $("nav.navbar.bootsnav > .side").hasClass("on");
+            
+            if (!isSideNavOpen) {
+                $("nav.navbar.bootsnav > .side").addClass("on");
+                $("body").addClass("on-side");
+            }
+            
+            const productId = $(this).data('id');
+            const productName = $(this).data('name');
+            const productPrice = $(this).data('price');
+            const productImage = $(this).data('image');
+        
+            const cartItem = cart.find(item => item.id === productId);
+            
+            if (cartItem) {
+                cartItem.quantity++;
+            } else {
+                cart.push({
+                    id: productId,
+                    name: productName,
+                    price: productPrice,
+                    quantity: 1,
+                    image: productImage
+                });
+            }
+            
+            updateCartUI();
+        });
+        
+     
+         window.changeQuantity = changeQuantity;
+         window.removeFromCart = removeFromCart;
 
         /* ==================================================
             Nice Select Init
