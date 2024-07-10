@@ -1,0 +1,47 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "RICO GELAS 220ml x 48pcs",
+        "price": 15000,
+        "unit": "crt",
+        "image": "assets/img/product/220ml.png"
+      },
+      {
+        "id": 2,
+        "name": "RICO BOTOL 330ml x 24pcs",
+        "price": 26500,
+        "unit": "crt",
+        "image": "assets/img/product/330ml.png"
+      },
+      {
+        "id": 3,
+        "name": "RICO BOTOL 600ml x 24pcs",
+        "price": 32500,
+        "unit": "crt",
+        "image": "assets/img/product/600.png"
+      },
+      {
+        "id": 4,
+        "name": "RICO BOTOL 1500ml x 12pcs",
+        "price": 32500,
+        "unit": "crt",
+        "image": "assets/img/product/1500ml.png"
+      },
+      {
+        "id": 5,
+        "name": "RICO GALON + AIR (19L)",
+        "price": 52000,
+        "unit": "pcs",
+        "image": "assets/img/product/galon.png"
+      },
+      {
+        "id": 6,
+        "name": "Air Isi Ulang (19L)",
+        "price": 12000,
+        "unit": "pcs",
+        "image": "assets/img/product/galon.png"
+      }
+    ]
+  }
+  

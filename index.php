@@ -6,13 +6,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="MediHub - Medical & Health Template">
+    <meta name="description" content="Menjadi pilihan utama untuk air minum berkualitas sejak tahun 2018. Kami menghadirkan kesegaran alami yang diambil langsung dari sumber mata air pegunungan, diproses dengan teknologi canggih untuk memastikan setiap tetesnya murni dan sehat. Komitmen kami adalah memberikan yang terbaik bagi kesehatan dan kesejahteraan Anda. Nikmati rasa segar dan kemurnian alami yang hanya bisa Anda dapatkan dari RICO.">
 
     <!-- ========== Page Title ========== -->
-    <title>MediHub - Medical & Health Template</title>
+    <title>Air Minum Segar RICO - Terlindungi dan Sehat</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -44,31 +44,64 @@
 <body>
 
     <!-- Preloader Start -->
-    <div class="se-pre-con"></div>
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
     <!-- Preloader Ends -->
-
-    <!-- Start Header Top 
+    
+     <!-- Start Header Top 
     ============================================= -->
-    <div class="top-bar-area inline inc-border">
+    <div class="top-bar-area double-info text-light bg-theme">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 address-info text-left">
                     <div class="info box">
                         <ul>
                             <li>
-                                <i class="fas fa-map-marker-alt"></i> California, TX 70240
+                                <div class="icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info">
+                                    <span>Phone</span> 082192059768
+                                </div>
                             </li>
                             <li>
-                                <i class="fas fa-envelope-open"></i> antariksaprakarsautama@gmail.com
+                                <div class="icon">
+                                    <i class="fas fa-envelope-open"></i>
+                                </div>
+                                <div class="info">
+                                    <span>Email</span> antariksaprakarsautama@gmail.com
+                                </div>
                             </li>
                             <li>
-                                <i class="fas fa-phone"></i> +123 456 7890
+                                <div class="icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="info">
+                                    <span>Kantor</span> PT Antariksa Prakarsa Utama
+                                </div> 
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-4 bar-btn text-right">
-                    <a href="#">Make Appoinment</a>
+                <div class="col-md-4 social text-right">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -105,7 +138,12 @@
                 <div class="attr-nav">
                     <ul>
                         <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
-                        <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+                        <li class="side-menu">
+                            <a href="#" class="position-relative">
+                                <i class="fa fa-shopping-cart"></i>
+                                <span class="badge-custom">1</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>        
                 <!-- End Atribute Navigation -->
@@ -124,136 +162,74 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right" data-in="#" data-out="#">
-                        <li class="dropdown active">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Home</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="index.php">Home Version One</a></li>
-                                <li><a href="index-2.php">Home Version Two</a></li>
-                                <li><a href="index-3.php">Home Version Three</a></li>
-                                <li><a href="index-4.php">Home Version Four</a></li>
-                                <li><a href="index-5.php">Home Version Five</a></li>
-                                <li><a href="index-6.php">Home Version Six</a></li>
-                                <li><a href="index-7.php">Home Version Seven <span class="badge">New</span></a></li>
-                                <li><a href="index-8.php">Home Version Eight <span class="badge">New</span></a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Home Onepage</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="index-op.php">Version One</a></li>
-                                        <li><a href="index-op-2.php">Version Two</a></li>
-                                        <li><a href="index-op-3.php">Version Three</a></li>
-                                        <li><a href="index-op-4.php">Version Four</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Pages</a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >About</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="about.php">Version One</a></li>
-                                        <li><a href="about-2.php">Version Two</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="services.php">Version One</a></li>
-                                        <li><a href="services-2.php">Version Two</a></li>
-                                        <li><a href="services-3.php">Version Three</a></li>
-                                        <li><a href="services-details.php">Services Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.php">Contact</a></li>
-                                <li><a href="404.php">Error Page</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Departments</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="services-details.php">Medecine and Health</a></li>
-                                <li><a href="services-details.php">Dental Care and Surgery</a></li>
-                                <li><a href="services-details.php">Eye Treatment</a></li>
-                                <li><a href="services-details.php">Children Chare</a></li>
-                                <li><a href="services-details.php">Traumatology</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Doctors</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="doctors.php">Version Grid</a></li>
-                                <li><a href="doctors-2.php">Version Carousel</a></li>
-                                <li><a href="doctor-details.php">Doctor Single</a></li>
-                            </ul>
-                        </li>  
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Gallery</a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Grid Colum</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="gallery-grid-2-colum.php">Gallery Two Colum</a></li>
-                                        <li><a href="gallery-grid-3-colum.php">Gallery Three Colum</a></li>
-                                        <li><a href="gallery-grid-4-colum.php">Gallery Four Colum</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Masonary Colum</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="gallery-masonary-2-colum.php">Gallery Two Colum</a></li>
-                                        <li><a href="gallery-masonary-3-colum.php">Gallery Three Colum</a></li>
-                                        <li><a href="gallery-masonary-4-colum.php">Gallery Four Colum</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog-standard.php">Blog Standard</a></li>
-                                <li><a href="blog-left-sidebar.php">Blog Left Sidebar</a></li>
-                                <li><a href="blog-right-sidebar.php">Blog Right Sidebar</a></li>
-                                <li><a href="blog-single.php">Blog Single Standard</a></li>
-                                <li><a href="blog-single-left-sidebar.php">Single Left Sidebar</a></li>
-                                <li><a href="blog-single-right-sidebar.php">Single Right Sidebar</a></li>
-                            </ul>
+                        <li>
+                            <a class="smooth-menu" href="#home">Beranda</a>
                         </li>
                         <li>
-                            <a href="contact.php">contact</a>
+                            <a class="smooth-menu" href="#tentang">Tentang Kami</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#produk">Produk</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#manfaat">Manfaat</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#testimoni">Testimoni</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#kontak">Kontak</a>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
 
             <!-- Start Side Menu -->
-            <div class="side">
+            <form class="side">
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
                 <div class="widget">
-                    <h4 class="title">About Us</h4>
-                    <p>
-                        Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind.
-                    </p>
+                     <!-- cart content -->
+                     <h4 class="title">Keranjang</h4>
+                        <div class="cart-item">
+                            <img src="https://placehold.co/80x100" alt="Product Image" width="80" height="100">
+                            <div class="item-details">
+                                <a href="#" class="item-name">RICO Botol 600 mL</a>
+                                <div class="quantity">
+                                    <button class="quantity-btn" id="decrease" onclick="decreaseValue()">-</button>
+                                    <input type="text" readonly id="quantity" value="1" min="1">
+                                    <button class="quantity-btn" id="increase" onclick="increaseValue()">+</button>
+                                </div>
+                                <span class="item-price">Rp. 999.999.999</span>
+                            </div>
+                            <a href="#" class="remove-item"><i class="fa fa-trash"></i></a>
+                        </div>
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <span>Rp. 999.999.999</span>
+                        </div>
                 </div>
+                <!-- <div class="widget">
+                    <h4 class="title">Keranjang</h4>
+                    <p>No Items !</p>
+                </div> -->
                 <div class="widget">
-                    <h4 class="title">Our Department</h4>
-                    <ul>
-                        <li><a href="#">Eye Treatment</a></li>
-                        <li><a href="#">Children Chare</a></li>
-                        <li><a href="#">Traumatology</a></li>
-                        <li><a href="#">X-ray</a></li>
-                    </ul>
+                    <h4 class="title">Alamat</h4>
+                    <div class="row gutter-1">
+                        <div class="col-sm-12">
+                                <input type="text" class="form-control" placeholder="Isi Nama..." required>  
+                        </div>
+                        <div class="col-md-12">
+                                <input type="number" class="form-control" placeholder="Isi Nomor Telfon..." required>  
+                        </div>
+                        <div class="col-md-12 comments">
+                            <textarea name="" rows="8" class="form-control" placeholder="Isi Alamat..." id="" required></textarea>
+                        </div>
+                    </div>
+                    <div class="cart-actions">
+                        <button type="submit" class="checkout-btn">Checkout</button>
+                    </div>  
                 </div>
-                <div class="widget social">
-                    <h4 class="title">Connect With Us</h4>
-                    <ul class="link">
-                        <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                        <li class="dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+            </form>
             <!-- End Side Menu -->
 
         </nav>
@@ -264,131 +240,114 @@
 
     <!-- Start Banner 
     ============================================= -->
-    <div class="banner-area heading-exchange text-dark">
-        <div id="bootcarousel" class="carousel inc-top-heading slide carousel-fade animate_text" data-ride="carousel">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner carousel-zoom">
-                <div class="item active">
-                    <div class="slider-thumb bg-cover" style="background-image: url(assets/img/2440x1578.png);"></div>
-                    <div class="box-table">
-                        <div class="box-cell">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <div class="content">
-                                            <h1 data-animation="animated fadeInUp">Best <span>Care</span></h1>
-                                            <h2 data-animation="animated fadeInDown">Your health is our priority</h2>
-                                            <p data-animation="animated slideInUp">
-                                                The ourselves suffering the sincerity. Inhabit her manners adapted age certain.<br> Debating offended at branched striking be subjects.
-                                            </p>
-                                            <a data-animation="animated slideInUp" class="btn btn-theme effect btn-md" href="#">View Details</a>
+    <div class="banner-area responsive-auto-height text-small">
+        <div class="item shadow theme text-light bg-fixed" style="background-image: url(assets/img/background.jpg);">
+            <div class="box-table">
+                <div class="box-cell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="content double-items">
+
+                                <div class="col-md-7 col-sm-6">
+                                    <h1 data-animation="animated slideInRight">Segarkan Harimu dengan RICO</h1>
+                                    <p data-animation="animated slideInUp">
+                                    Setiap tetes air RICO adalah ciptaan penuh dedikasi untuk kualitas dan keamanan. Melalui proses selektif yang ketat, kami menjamin Anda hanya mendapatkan yang terbaik dari sumber-sumber alam yang murni.
+                                    </p>
+                                    <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="#">Belanja Sekarang</a>
+                                </div>
+
+                                <!-- Start Appoinment Form -->
+                                <div class="col-md-5 col-sm-6 appoinment">
+                                    <div class="appoinment-box">
+                                        <div class="heading">
+                                            <h2>Buat Janji</h2>
                                         </div>
+                                        <form action="#">
+                                            <div class="row">
+                                            <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <select>
+                                                            <option disabled selected>Departemen...</option>
+                                                            <option value="1">Perorangan</option>
+                                                            <option value="2">Perusahaan</option>
+                                                            <option value="4">Organisasi</option>
+                                                            <option value="5">Komunitas</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input class="form-control" id="name" name="name" placeholder="Nama..." type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input class="form-control" id="name" name="name" placeholder="Nomor Telfon..." type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <button type="submit" name="submit" id="submit">
+                                                        Submit Query <i class="fa fa-paper-plane"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slider-thumb bg-cover" style="background-image: url(assets/img/2440x1578.png);"></div>
-                    <div class="box-table">
-                        <div class="box-cell">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <div class="content">
-                                            <h1 data-animation="animated fadeInUp">Best <span>Technology</span></h1>
-                                            <h2 data-animation="animated fadeInDown">Affordable solution by better technology</h2>
-                                            <p data-animation="animated slideInUp">
-                                                The ourselves suffering the sincerity. Inhabit her manners adapted age certain.<br> Debating offended at branched striking be subjects.
-                                            </p>
-                                            <a data-animation="animated slideInUp" class="btn btn-theme effect btn-md" href="#">View Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slider-thumb bg-cover" style="background-image: url(assets/img/2440x1578.png);"></div>
-                    <div class="box-table">
-                        <div class="box-cell">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-8">
-                                        <div class="content">
-                                            <h1 data-animation="animated fadeInUp"><span>Best</span> specialist</h1>
-                                            <h2 data-animation="animated fadeInDown">The country's best heart specialist</h2>
-                                            <p data-animation="animated slideInUp">
-                                                The ourselves suffering the sincerity. Inhabit her manners adapted age certain.<br> Debating offended at branched striking be subjects.
-                                            </p>
-                                            <a data-animation="animated slideInUp" class="btn btn-theme effect btn-md" href="#">View Details</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- End Appoinment Form -->
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- End Wrapper for slides -->
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#bootcarousel" data-slide="prev">
-                <i class="fa fa-angle-left"></i>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#bootcarousel" data-slide="next">
-                <i class="fa fa-angle-right"></i>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
     </div>
     <!-- End Banner -->
 
-    <!-- Start About
+     <!-- Start About
     ============================================= -->
-    <div class="about-area default-padding">
+    <div class="about-area default-padding" id="tentang">
         <div class="container">
             <div class="row">
                 <div class="about-items">
                     <div class="col-md-6 info">
-                        <h4>Has been working since 2000</h4>
-                        <h2>A Great Place to Work. A Great Place to Receive Care. Leading Medicine.</h2>
+                        <h4>Beroperasi sejak 2018</h4>
+                        <h2>Segarkan Harimu dengan RICO: Air Minum Berkualitas Tinggi dari Alam</h2>
                         <p>
-                            However venture pursuit he am mr cordial. Forming musical am hearing studied be luckily. Ourselves for determine attending how led gentleman sincerity. Valley afford uneasy joy she thrown though bed set. In me forming general prudent on country carried. Behaved an or suppose justice. Seemed whence how son rather easily and change missed.
+                            RICO telah menjadi pilihan utama untuk air minum berkualitas sejak tahun 2018. Kami menghadirkan kesegaran alami yang diambil langsung dari sumber mata air pegunungan, diproses dengan teknologi canggih untuk memastikan setiap tetesnya murni dan sehat. Komitmen kami adalah memberikan yang terbaik bagi kesehatan dan kesejahteraan Anda. Nikmati rasa segar dan kemurnian alami yang hanya bisa Anda dapatkan dari RICO.
                         </p>
                         <div class="bottom">
                             <div class="video">
-                                <a href="https://www.youtube.com/watch?v=5vY-D42NFP4" class="popup-youtube relative theme video-play-button item-center">
-                                    <i class="fa fa-play"></i>
+                                <a href="https://wa.me/6282192059768?text=Halo%20kak!,%20saya%20mau%20tahu%20soal%20produk%20air%20RICO" target="_blank" class="relative theme video-play-button whatsapp-button item-center">
+                                    <i class="fab fa-whatsapp"></i>
                                 </a>
                             </div>
                             <div class="content">
-                                <h4>Let’s see our intro video</h4>
+                                <h4>Kontak Whatsapp Kami</h4>
                                 <p>
-                                    If your smile is not becoming to you, then you should be coming to me!
+                                    Temukan lebih banyak tentang RICO dan bagaimana kami menghadirkan kesegaran dan kesehatan melalui Whatsapp!
                                 </p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6 tabs-items">
                         <!-- Tab Nav -->
                         <ul class="nav nav-pills">
                             <li class="active">
                                 <a data-toggle="tab" href="#tab1" aria-expanded="true">
-                                    <i class="fas fa-notes-medical"></i> Consultation
+                                    <i class="fas fa-user-tie"></i> Konsultasi
                                 </a>
                             </li>
                             <li>
                                 <a data-toggle="tab" href="#tab2" aria-expanded="false">
-                                    <i class="fas fa-map-marker-alt"></i> Location
+                                    <i class="fas fa-map-marker-alt"></i> Lokasi
                                 </a>
                             </li>
                             <li>
                                 <a data-toggle="tab" href="#tab3" aria-expanded="false">
-                                    <i class="fas fa-clock"></i> Opening Hour
+                                    <i class="fas fa-clock"></i> Jam Buka
                                 </a>
                             </li>
                         </ul>
@@ -398,14 +357,15 @@
                             <!-- Single Item -->
                             <div id="tab1" class="tab-pane fade active in">
                                 <div class="info title">
-                                    <h3>Consulted by experienced doctors</h3>
-                                    <p>
-                                        Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
-                                    </p>
-                                    <p>
-                                        Placing assured be if removed it besides on. Far shed each high read are men over day. Afraid we praise lively he suffer family estate is. Ample order up in of in ready. Timed blind had now those ought set often which. Or snug dull he show more true wish. No at many deny away miss evil. On in so indeed spirit an mother. Amounted old strictly but marianne admitted. People former is remove remain we praise
-                                    </p>
-                                    <a class="btn btn-theme border btn-md" href="#">Make Appoinment</a>
+                                <h3>Konsultasi dengan Sales Kami</h3>
+                                <p>
+                                    Kami percaya bahwa kesehatan dimulai dari air yang kita minum. Untuk itu, kami menyediakan layanan konsultasi dengan salesman berpengalaman yang akan membantu Anda memahami manfaat air minum berkualitas dan bagaimana mengoptimalkan konsumsi air untuk kebutuhan Anda.
+                                </p>
+                                <p>
+                                    Dengan pendekatan personal dan profesional, salesman kami siap memberikan saran yang tepat untuk kebutuhan hidrasi Anda sehari-hari. Jadwalkan konsultasi Anda sekarang dan mulai perjalanan Anda menuju hidup yang lebih sehat dengan RICO.
+                                </p>
+
+                                <a class="btn btn-theme border btn-md" href="https://wa.me/6282192059768?text=Halo%20kak!,%20saya%20mau%20tahu%20soal%20produk%20air%20RICO">Buat Janji</a>
                                 </div>
                             </div>
                             <!-- End Single Item -->
@@ -413,11 +373,11 @@
                             <!-- Single Item -->
                             <div id="tab2" class="tab-pane fade">
                                 <div class="info title">
-                                    <h3>Our location</h3>
+                                    <h3>Lokasi Kami</h3>
                                     <p>
-                                        Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
+                                        RICO tersedia di berbagai lokasi strategis untuk memastikan Anda dapat dengan mudah mendapatkan air minum berkualitas tinggi kami. Kunjungi salah satu lokasi kami untuk melihat langsung proses pengolahan air kami dan mencoba kesegaran RICO.
                                     </p>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d993.5432268737088!2d119.5104613!3d-5.0757077!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbefbf62a37e94d%3A0xfe91c81b3b68ffbd!2sPT.%20Antariksa%20Prakarsa%20Utama!5e0!3m2!1sid!2sid!4v1720515254882!5m2!1sid!2sid"></iframe>
                                 </div>
                             </div>
                             <!-- End Single Item -->
@@ -425,24 +385,109 @@
                             <!-- Single Item -->
                             <div id="tab3" class="tab-pane fade">
                                 <div class="info title">
-                                    <h3>Schedule of working hours</h3>
+                                    <h3>Jam Operasional Kami</h3>
                                     <p>
-                                        Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
+                                        Kami selalu siap melayani Anda. Berikut adalah jam operasional kami:
                                     </p>
                                     <ul>
-                                        <li> <span> Mon - Tues :  </span>
-                                          <div class="pull-right"> 6.00 am - 10.00 pm </div>
+                                        <li> <span> Senin - Sabtu :  </span>
+                                            <div class="pull-right"> 7.30 WITA - 18.00 WITA </div>
                                         </li>
-                                        <li> <span> Wednes - Thurs :</span>
-                                          <div class="pull-right"> 8.00 am - 6.00 pm </div>
-                                        </li>
-                                        <li> <span> Sun : </span>
-                                          <div class="pull-right closed"> Closed </div>
+                                        <li> <span> Minggu : </span>
+                                            <div class="pull-right closed"> Tutup </div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <!-- End Single Item -->
+                        </div>
+                        <!-- End Tab Content -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+
+
+
+    
+    <!-- Start Departments
+    ============================================= -->
+    <div id="produk" class="department-tabs default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 tab-navs">
+                    <div class="heading">
+                        <h4>Produk Kami</h4>
+                    </div>
+                    <!-- Tab Nav -->
+                    <ul class="nav nav-pills">
+                        <li class="active">
+                            <a data-toggle="tab" href="#tab1" aria-expanded="true">
+                                 RICO CUP 220 ml
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#tab3" aria-expanded="false">
+                                RICO BOTOL 330 ml
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#tab4" aria-expanded="false">
+                                RICO BOTOL 600 ml
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#tab5" aria-expanded="false">
+                                RICO BOTOL 1500 ml
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#tab6" aria-expanded="false">
+                                RICO GALON 19L
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#tab6" aria-expanded="false">
+                                RICO GALON REFILL 19L
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End Tab Nav -->
+                </div>
+                <div class="col-md-9 tab-contents">
+                    <div class="row">
+                        <!-- Start Tab Content -->
+                        <div class="tab-content tab-content-info">
+                            <!-- Single Item -->
+                            <div id="tab1" class="tab-pane fade active in">
+
+                                <!-- Start Department Info -->
+                                <div class="row">
+                                    <div class="info title">
+                                        <div class="thumb col-md-6">
+                                            <img src="https://placehold.co/900X900" alt="Thumb">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 style="margin-bottom: 5px !important;">Medecine and Health</h3>
+                                            <b style="color: #004080;">Rp.12.000.000</b>
+                                            <p style="margin-top: 12px;">
+                                                Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
+                                            </p>
+                                            
+                                            <a class="btn btn-theme border btn-md" href="#"><i class="fa fa-cart-plus" style="margin-right: 10px;"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Department Info -->
+
+                              
+                            </div>
+                            <!-- End Single Item -->
+
+                          
 
                         </div>
                         <!-- End Tab Content -->
@@ -451,18 +496,62 @@
             </div>
         </div>
     </div>
-    <!-- End About -->
+    <!-- End Departments -->
 
-    <!-- Start Services 
+    <!-- Start Why Choose RICO 
     ============================================= -->
-    <div class="services-area inc-icon bg-gray carousel-shadow default-padding">
+    <div class="chose-us-area">
+        <div class="container-full">
+            <div class="row">
+                <div class="col-md-6 thumb bg-cover shadow theme" style="background-image: url(assets/img/wp5148315.jpg);"></div>
+                <div class="col-md-6 info">
+                    <div class="heading">
+                        <h2>Mengapa Memilih RICO?</h2>
+                        <p>
+                            RICO adalah pilihan terbaik untuk kebutuhan air minum Anda. Kami memastikan kualitas terbaik dengan menjaga kemurnian dan memberikan manfaat kesehatan yang luar biasa.
+                        </p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="info">
+                                <h4>Kualitas Terbaik</h4>
+                                <p>
+                                    Air minum RICO melalui proses filtrasi yang ketat untuk memastikan setiap tetesnya murni dan aman untuk dikonsumsi.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info">
+                                <h4>Kaya Akan Mineral</h4>
+                                <p>
+                                    RICO mengandung mineral alami yang penting untuk kesehatan tubuh, membantu menjaga keseimbangan cairan dan fungsi tubuh yang optimal.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info">
+                                <h4>Manfaat Kesehatan</h4>
+                                <p>
+                                    Konsumsi air minum RICO secara teratur dapat meningkatkan metabolisme, kesehatan kulit, dan fungsi ginjal, serta meningkatkan konsentrasi dan fokus.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Why Choose RICO -->
+
+    <!-- Start Services -->
+    <div id="manfaat" class="services-area inc-icon bg-gray carousel-shadow default-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="site-heading text-center">
-                        <h2>Centres of <span>Excellence</span></h2>
+                        <h2>Manfaat <span>Minum Air Putih</span></h2>
                         <p>
-                            While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old
+                            Air putih memiliki banyak manfaat untuk kesehatan tubuh kita. Berikut adalah beberapa manfaat utama dari rutin minum air putih setiap hari.
                         </p>
                     </div>
                 </div>
@@ -474,15 +563,15 @@
                         <div class="item">
                             <div class="info">
                                 <h4>
-                                    <a href="#">Body Surgery</a>
+                                    <a href="#">Hidrasi Tubuh</a>
                                 </h4>
                                 <div class="overlay">
-                                    <i class="flaticon-medical"></i>
+                                    <i class="fas fa-tint"></i>
                                 </div>
                                 <p>
-                                    Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth.
+                                    Minum air putih yang cukup membantu menjaga hidrasi tubuh, yang penting untuk menjaga fungsi organ-organ tubuh berjalan dengan baik.
                                 </p>
-                                <a class="btn btn-theme border circle btn-md" href="#">Read More</a>
+                                <a class="btn btn-theme border circle btn-md" href="#">Baca Lebih Lanjut</a>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -490,15 +579,15 @@
                         <div class="item">
                             <div class="info">
                                 <h4>
-                                    <a href="#">Dental Care</a>
+                                    <a href="#">Detoksifikasi</a>
                                 </h4>
                                 <div class="overlay">
-                                    <i class="flaticon-anesthesia"></i>
+                                    <i class="fas fa-sync-alt"></i>
                                 </div>
                                 <p>
-                                    Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth.
+                                    Air putih membantu proses detoksifikasi alami tubuh dengan membuang racun melalui keringat dan urin.
                                 </p>
-                                <a class="btn btn-theme border circle btn-md" href="#">Read More</a>
+                                <a class="btn btn-theme border circle btn-md" href="#">Baca Lebih Lanjut</a>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -506,15 +595,15 @@
                         <div class="item">
                             <div class="info">
                                 <h4>
-                                    <a href="#">Eye Care</a>
+                                    <a href="#">Kulit Sehat</a>
                                 </h4>
                                 <div class="overlay">
-                                    <i class="flaticon-anatomy"></i>
+                                    <i class="fas fa-smile-beam"></i>
                                 </div>
                                 <p>
-                                    Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth.
+                                    Minum air putih yang cukup dapat membantu menjaga kelembapan kulit dan mencegah penuaan dini.
                                 </p>
-                                <a class="btn btn-theme border circle btn-md" href="#">Read More</a>
+                                <a class="btn btn-theme border circle btn-md" href="#">Baca Lebih Lanjut</a>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -522,15 +611,15 @@
                         <div class="item">
                             <div class="info">
                                 <h4>
-                                    <a href="#">Blood Cancer</a>
+                                    <a href="#">Menjaga Berat Badan</a>
                                 </h4>
                                 <div class="overlay">
-                                    <i class="flaticon-lung-cancer"></i>
+                                    <i class="fas fa-weight"></i>
                                 </div>
                                 <p>
-                                    Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth.
+                                    Minum air putih sebelum makan dapat membantu mengontrol nafsu makan dan menjaga berat badan ideal.
                                 </p>
-                                <a class="btn btn-theme border circle btn-md" href="#">Read More</a>
+                                <a class="btn btn-theme border circle btn-md" href="#">Baca Lebih Lanjut</a>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -538,15 +627,15 @@
                         <div class="item">
                             <div class="info">
                                 <h4>
-                                    <a href="#">Neurology Sargery</a>
+                                    <a href="#">Meningkatkan Konsentrasi</a>
                                 </h4>
                                 <div class="overlay">
-                                    <i class="flaticon-thinking"></i>
+                                    <i class="flaticon-neurology"></i>
                                 </div>
                                 <p>
-                                    Attachment astonished to on appearance imprudence so collecting in excellence. Tiled way blind lived whose new. The for fully had she there leave merit enjoy forth.
+                                    Hidrasi yang baik dapat membantu meningkatkan konsentrasi dan fungsi kognitif, sehingga lebih fokus dan produktif.
                                 </p>
-                                <a class="btn btn-theme border circle btn-md" href="#">Read More</a>
+                                <a class="btn btn-theme border circle btn-md" href="#">Baca Lebih Lanjut</a>
                             </div>
                         </div>
                         <!-- End Single Item -->
@@ -557,302 +646,17 @@
     </div>
     <!-- End Services -->
 
-    <!-- Start Why Chose Us 
-    ============================================= -->
-    <div class="chose-us-area item-half">
-        <div class="container-full">
-            <div class="row">
-                <div class="col-md-6 thumb bg-cover" style="background-image: url(assets/img/2440x1578.png);"></div>
-                <div class="col-md-6 info">
-                    <div class="heading">
-                        <h2>Why Chose us</h2>
-                        <p>
-                            Offering confined entrance no. Nay rapturous him see something residence. Highly talked do so vulgar. Her use behaved spirits and natural attempt say feeling. Exquisite mr incommode immediate he something ourselves it of. Law conduct yet chiefly beloved examine village proceed
-                        </p>
-                    </div>
-                    <ul>
-                        <li>
-                            <div class="info">
-                                <h4>Qualified facilities</h4>
-                                <p>
-                                    Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new. 
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info">
-                                <h4>Top Level Doctors</h4>
-                                <p>
-                                    Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new. 
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info">
-                                <h4>Dedicated patient care</h4>
-                                <p>
-                                    Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new. 
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info">
-                                <h4>24/7 Emergency</h4>
-                                <p>
-                                    Consider may dwelling old him her surprise finished families graceful. Gave led past poor met fine was new. 
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Why Chose Us -->
-
-    <!-- Start Doctors Tips 
-    ============================================= -->
-    <div class="doctor-tips-area default-padding bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="site-heading text-center">
-                        <h2>Health <span>Tips</span></h2>
-                        <p>
-                            While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="health-tips-items tips-carousel owl-carousel owl-theme">
-                    <!-- Single Item -->
-                    <div class="single-item">
-                        <div class="col-md-5">
-                            <div class="thumb">
-                                <img src="assets/img/800x800.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="info">
-                                <div class="doctor">
-                                    <h4>Dr. Jessica Ronal</h4>
-                                    <h5>MPH, Medicine, Surgery</h5>
-                                </div>
-                                <h3>How to live a healthy lifestyle?</h3>
-                                <p>
-                                    Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on. 
-                                </p>
-                                <h4>Follow the instructions</h4>
-                                <ul>
-                                    <li>Dont just worry about the things you cannot help.</li>
-                                    <li>Eat Healthy, work better, do gardening.</li>
-                                    <li>Some relationships can kill you. Avoid them at the most.</li>
-                                    <li>Focus on the good things that you like</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item">
-                        <div class="col-md-5">
-                            <div class="thumb">
-                                <img src="assets/img/800x800.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="info">
-                                <div class="doctor">
-                                    <h4>Dr. Jessica Ronal</h4>
-                                    <h5>MPH, Medicine, Surgery</h5>
-                                </div>
-                                <h3>How to live a healthy lifestyle?</h3>
-                                <p>
-                                    Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on. 
-                                </p>
-                                <h4>Follow the instructions</h4>
-                                <ul>
-                                    <li>Dont just worry about the things you cannot help.</li>
-                                    <li>Eat Healthy, work better, do gardening.</li>
-                                    <li>Some relationships can kill you. Avoid them at the most.</li>
-                                    <li>Focus on the good things that you like</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item">
-                        <div class="col-md-5">
-                            <div class="thumb">
-                                <img src="assets/img/800x800.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="info">
-                                <div class="doctor">
-                                    <h4>Dr. Jessica Ronal</h4>
-                                    <h5>MPH, Medicine, Surgery</h5>
-                                </div>
-                                <h3>How to live a healthy lifestyle?</h3>
-                                <p>
-                                    Frequently partiality possession resolution at or appearance unaffected he me. Engaged its was evident pleased husband. Ye goodness felicity do disposal dwelling no. First am plate jokes to began of cause an scale. Subjects he prospect elegance followed no overcame possible it on. 
-                                </p>
-                                <h4>Follow the instructions</h4>
-                                <ul>
-                                    <li>Dont just worry about the things you cannot help.</li>
-                                    <li>Eat Healthy, work better, do gardening.</li>
-                                    <li>Some relationships can kill you. Avoid them at the most.</li>
-                                    <li>Focus on the good things that you like</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Doctors Tips -->
-
-    <!-- Start Doctors 
-    ============================================= -->
-    <div class="doctor-area default-padding bottom-less">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="site-heading text-center">
-                        <h2>Meet Our <span>Specialists</span></h2>
-                        <p>
-                            While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="doctor-items text-center">
-                    <!-- Single Item -->
-                    <div class="col-md-4 equal-height">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
-                                <div class="overlay">
-                                    <a href="#"><i class="fas fa-plus"></i></a>
-                                </div>
-                                <div class="social">
-                                    <ul>
-                                        <li class="facebook">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li class="linkedin">
-                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h4>Jessica Jones</h4>
-                                <h5>Cardiologist</h5>
-                                <div class="appoinment-btn">
-                                    <a href="#">Make appoinment</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 equal-height">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
-                                <div class="overlay">
-                                    <a href="#"><i class="fas fa-plus"></i></a>
-                                </div>
-                                <div class="social">
-                                    <ul>
-                                        <li class="facebook">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li class="linkedin">
-                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h4>Ahel Natasha</h4>
-                                <h5>Dental surgeon</h5>
-                                <div class="appoinment-btn">
-                                    <a href="#">Make appoinment</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 equal-height">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
-                                <div class="overlay">
-                                    <a href="#"><i class="fas fa-plus"></i></a>
-                                </div>
-                                <div class="social">
-                                    <ul>
-                                        <li class="facebook">
-                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="twitter">
-                                            <a href="#"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="instagram">
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                        </li>
-                                        <li class="linkedin">
-                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="info">
-                                <h4>Gabriela Beckett</h4>
-                                <h5>Cosmetic Surgeon</h5>
-                                <div class="appoinment-btn">
-                                    <a href="#">Make appoinment</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Doctors -->
 
     <!-- Start Testimonials 
     ============================================= -->
-    <div class="testimonials-area carousel-shadow bg-gray default-padding">
+    <div id="testimoni" class="testimonials-area carousel-shadow bg-light default-padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="site-heading text-center">
-                        <h2>Patient <span>Testimonials</span></h2>
+                        <h2>Testimoni <span>Pelanggan</span></h2>
                         <p>
-                            While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old
+                            RICO, air minum yang menyegarkan dan berkualitas tinggi, telah memenangkan hati banyak pelanggan. Inilah beberapa pengalaman mereka.
                         </p>
                     </div>
                 </div>
@@ -864,16 +668,16 @@
                         <div class="item">
                             <div class="content">
                                 <p>
-                                    Departure so attention pronounce satisfied daughters am. But shy tedious pressed studied opinion entered windows off. Advantage dependent suspicion convinced provision him yet. Mr immediate remaining conveying allowance do or. 
-                                </p>
+                                    Saya telah mencoba berbagai merek air minum, namun RICO benar-benar berbeda. Rasanya murni dan segar, 
+                                    membuatnya sangat cocok untuk kebutuhan harian saya. 
                             </div>
                             <div class="provider">
                                 <div class="thumb">
-                                    <img src="assets/img/800x800.png" alt="Thumb">
+                                    <img src="assets/img/maria_suharto.jpg" alt="Thumb">
                                 </div>
                                 <div class="info">
-                                    <h4>Angle Natasha</h4>
-                                    <h5>patient of <span>surgery</span></h5>
+                                    <h4>Maria Suharto</h4>
+                                    <h5>Pelanggan setia <span>RICO</span></h5>
                                 </div>
                             </div>
                         </div>
@@ -882,16 +686,16 @@
                         <div class="item">
                             <div class="content">
                                 <p>
-                                    Departure so attention pronounce satisfied daughters am. But shy tedious pressed studied opinion entered windows off. Advantage dependent suspicion convinced provision him yet. Mr immediate remaining conveying allowance do or. 
+                                    Air minum RICO tidak hanya menyegarkan, tetapi juga memberikan rasa tenang karena saya tahu kualitasnya terjamin. Saya selalu membawa botol RICO kemana pun saya pergi.
                                 </p>
                             </div>
                             <div class="provider">
                                 <div class="thumb">
-                                    <img src="assets/img/800x800.png" alt="Thumb">
+                                    <img src="assets/img/ahmad_faisal.jpg" alt="Thumb">
                                 </div>
                                 <div class="info">
-                                    <h4>John Abraham</h4>
-                                    <h5>Dental <span>patients</span></h5>
+                                    <h4>Ahmad Faisal</h4>
+                                    <h5>Pelanggan setia <span>RICO</span></h5>
                                 </div>
                             </div>
                         </div>
@@ -900,16 +704,16 @@
                         <div class="item">
                             <div class="content">
                                 <p>
-                                    Departure so attention pronounce satisfied daughters am. But shy tedious pressed studied opinion entered windows off. Advantage dependent suspicion convinced provision him yet. Mr immediate remaining conveying allowance do or. 
+                                    Sebagai seorang atlet, saya sangat memperhatikan kualitas air minum saya. RICO memberikan hidrasi optimal yang saya butuhkan setiap hari. Saya sangat merekomendasikan RICO!
                                 </p>
                             </div>
                             <div class="provider">
                                 <div class="thumb">
-                                    <img src="assets/img/800x800.png" alt="Thumb">
+                                    <img src="assets/img/lisa_andriani.jpg" alt="Thumb">
                                 </div>
                                 <div class="info">
-                                    <h4>Kriti Sairi</h4>
-                                    <h5>patient of <span>surgery</span></h5>
+                                    <h4>Lisa Andriani</h4>
+                                    <h5>Atlet dan pengguna <span>RICO</span></h5>
                                 </div>
                             </div>
                         </div>
@@ -921,136 +725,63 @@
     </div>
     <!-- End Testimonials -->
 
-    <!-- Start Blog 
+       <!-- Start Video BG 
     ============================================= -->
-    <div class="blog-area default-padding">
+    <div class="video-bg-area text-center shadow theme text-light video-bg-live bg-fixed" style="background-image: url(assets/img/background.jpg);">
+        <div class="player shadow dark" data-property="{videoURL:'https://www.youtube.com/watch?v=qcPxIAl2aN4',containment:'.video-bg-live', showControls:false, autoPlay:true, zoom:0, loop:true, mute:true, startAt:15, opacity:1, quality:'default'}"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <div class="site-heading text-center">
-                        <h2>Recent <span>Blog</span></h2>
-                        <p>
-                            While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="blog-items">
-                    <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/img/800x600.png" alt="Thumb">
-                                    <div class="post-type">
-                                        <i class="fas fa-images"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <div class="meta">
-                                    <ul>
-                                        <li><a href="#">Admin</a></li>
-                                        <li>15 June, 2019</li>
-                                    </ul>
-                                </div>
-                                <h4>
-                                    <a href="#">increasing in especially inquietude companions acceptance</a>
-                                </h4>
-                                <p>
-                                    General enquire picture letters garrets on offices of no on. Say one hearing between excited evening all inhabit thought you.
-                                </p>
-                                <a class="btn btn-theme circle border btn-sm" href="#">Read More <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/img/800x600.png" alt="Thumb">
-                                    <div class="post-type">
-                                        <i class="fas fa-video"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <div class="meta">
-                                    <ul>
-                                        <li><a href="#">Admin</a></li>
-                                        <li>17 Auguest, 2019</li>
-                                    </ul>
-                                </div>
-                                <h4>
-                                    <a href="#">Middleton as pretended listening he smallness perceived.</a>
-                                </h4>
-                                <p>
-                                    General enquire picture letters garrets on offices of no on. Say one hearing between excited evening all inhabit thought you.
-                                </p>
-                                <a class="btn btn-theme circle border btn-sm" href="#">Read More <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/img/800x600.png" alt="Thumb">
-                                    <div class="post-type">
-                                        <i class="fas fa-image"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="info">
-                                <div class="meta">
-                                    <ul>
-                                        <li><a href="#">Admin</a></li>
-                                        <li>25 September, 2019</li>
-                                    </ul>
-                                </div>
-                                <h4>
-                                    <a href="#">Offended packages pleasant remainder recommend engrossed</a>
-                                </h4>
-                                <p>
-                                    General enquire picture letters garrets on offices of no on. Say one hearing between excited evening all inhabit thought you.
-                                </p>
-                                <a class="btn btn-theme circle border btn-sm" href="#">Read More <i class="fas fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
+                    <h1>Kualitas Terbaik untuk Kesehatan Anda.</h1>
+                    <a class="btn btn-theme effect btn-md" href="#">Hubungi Sales</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Blog -->
+    <!-- End Video BG -->
 
-    <!-- Start Newsletter 
+    <!-- Start Contact
     ============================================= -->
-    <div class="newsletter-area default-padding shadow dark bg-fixed text-center text-light" style="background-image: url(assets/img/2440x1578.png);">
+    <div id="kontak" class="top-entry-area bg-gray text-center">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h4>Subscribe For Get Update</h4>
-                    <h2>Let’s Find An Office Near You.</h2>
-                    <form action="#">
-                        <div class="input-group stylish-input-group">
-                            <input type="email" name="email" class="form-control" placeholder="Enter your e-mail here">
-                            <button type="submit">
-                                <i class="fa fa-paper-plane"></i>
-                            </button>  
+                <div class="item-box">
+                    <!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h4>Lokasi</h4>
+                            <p>
+                                Jl. Ir. Sutami No.85, Bulurokeng, Kota Makassar, Sulawesi Selatan 90242
+                            </p>
                         </div>
-                    </form>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <i class="fas fa-phone"></i>
+                            <h4>Telepon Kantor</h4>
+                            <h2>+62 821 9205 9768</h2>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <i class="fas fa-envelope-open"></i>
+                            <h4>Email</h4>
+                            <p>
+                                antariksaprakarsautama@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Newsletter -->
+    <!-- End Contact -->
 
     <!-- Start Footer 
     ============================================= -->
@@ -1063,32 +794,18 @@
                     <!-- Single Item -->
                     <div class="col-md-4 item">
                         <div class="f-item">
-                            <h4>About</h4>
+                            <h4>Tentang Kami</h4>
                             <p>
                                 Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address.
                             </p>
-                            <h2><i class="fas fa-phone"></i> +123 456 7890</h2>
-                            <div class="opening-info">
-                                <h5>Opening Hours</h5>
-                                <ul>
-                                    <li> <span> Mon - Tues :  </span>
-                                      <div class="pull-right"> 6.00 am - 10.00 pm </div>
-                                    </li>
-                                    <li> <span> Wednes - Thurs :</span>
-                                      <div class="pull-right"> 8.00 am - 6.00 pm </div>
-                                    </li>
-                                    <li> <span> Sun : </span>
-                                      <div class="pull-right closed"> Closed </div>
-                                    </li>
-                                </ul>
-                            </div>
+                            <h2><i class="fas fa-phone"></i> +62 821 9205 9768</h2>
                         </div>
                     </div>
                     <!-- End Single Item -->
                     <!-- Single Item -->
                     <div class="col-md-4 item">
                         <div class="f-item link">
-                            <h4>Our Depeartment</h4>
+                            <h4>Produk Kami</h4>
                             <ul>
                                 <li>
                                     <a href="#"><i class="fas fa-arrow-right"></i> Medecine and Health</a>
@@ -1115,26 +832,19 @@
                     <!-- Single Item -->
                     <div class="col-md-4 item">
                         <div class="f-item twitter-widget">
-                            <h4>Latest tweets</h4>
-                            <div class="twitter-item">
-                                <div class="twitter-content">
-                                    <p>
-                                        <a href="#">@Becare</a> Looking for an awesome CREATIVE WordPress Theme? Find it here: <a target="_blank" href="http://t.co/0WWEMQEQ48">http://t.co/0WWEMQEQ48</a>
-                                    </p>
-                                </div>
-                                <div class="twitter-context">
-                                    <i class="fab fa-twitter"></i><span class="twitter-date"> 01 day ago</span>
-                                </div>
-                            </div>
-                            <div class="twitter-item">
-                                <div class="twitter-content">
-                                    <p>
-                                        <a href="#">@Jisham</a> It is a long established fact that a reader will be distracted by the readable . Find it here: <a target="_blank" href="http://t.co/0WWEMQEQ48">http://t.co/0WWEMQEQ48</a>
-                                    </p>
-                                </div>
-                                <div class="twitter-context">
-                                    <i class="fab fa-twitter"></i><span class="twitter-date"> 02 days ago</span>
-                                </div>
+                            <h4>Jam Kerja</h4>
+                            <div class="opening-info">
+                                <ul>
+                                    <li> <span> Mon - Tues :  </span>
+                                      <div class="pull-right"> 6.00 am - 10.00 pm </div>
+                                    </li>
+                                    <li> <span> Wednes - Thurs :</span>
+                                      <div class="pull-right"> 8.00 am - 6.00 pm </div>
+                                    </li>
+                                    <li> <span> Sun : </span>
+                                      <div class="pull-right closed"> Closed </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -1143,11 +853,11 @@
             </div>
         </div>
         <!-- Start Footer Bottom -->
-        <div class="footer-bottom bg-dark text-light">
+        <div class="footer-bottom bg-theme text-light">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>&copy; Copyright 2019. All Rights Reserved by <a href="#">validthemes</a></p>
+                        <p>&copy; Copyright 2019. All Rights Reserved by PT Antariksa Prakarsa Utama</p>
                     </div>
                     <div class="col-md-6 text-right link">
                         <ul>
@@ -1169,6 +879,7 @@
     </footer>
     <!-- End Footer -->
 
+
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="assets/js/jquery-1.12.4.min.js"></script>
@@ -1187,6 +898,7 @@
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script src="node_modules/shopify-cartjs/dist/cart.min.js"></script>
+    <script src="node_modules/shopify-cartjs/dist/rivets-cart.min.js"></script>
 </body>
 </html>
