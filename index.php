@@ -409,94 +409,90 @@
         </div>
     </div>
     <!-- End About -->
-
-
-
     
-    <!-- Start Departments
-    ============================================= -->
-    <div id="produk" class="department-tabs default-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 tab-navs">
-                    <div class="heading">
-                        <h4>Produk Kami</h4>
-                    </div>
-                    <!-- Tab Nav -->
-                    <ul class="nav nav-pills">
-                        <li class="active">
-                            <a data-toggle="tab" href="#tab1" aria-expanded="true">
-                                 RICO CUP 220 ml
-                            </a>
-                        </li>
-                        <li>
-                            <a data-toggle="tab" href="#tab3" aria-expanded="false">
-                                RICO BOTOL 330 ml
-                            </a>
-                        </li>
-                        <li>
-                            <a data-toggle="tab" href="#tab4" aria-expanded="false">
-                                RICO BOTOL 600 ml
-                            </a>
-                        </li>
-                        <li>
-                            <a data-toggle="tab" href="#tab5" aria-expanded="false">
-                                RICO BOTOL 1500 ml
-                            </a>
-                        </li>
-                        <li>
-                            <a data-toggle="tab" href="#tab6" aria-expanded="false">
-                                RICO GALON 19L
-                            </a>
-                        </li>
-                        <li>
-                            <a data-toggle="tab" href="#tab6" aria-expanded="false">
-                                RICO GALON REFILL 19L
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- End Tab Nav -->
-                </div>
-                <div class="col-md-9 tab-contents">
-                    <div class="row">
-                        <!-- Start Tab Content -->
-                        <div class="tab-content tab-content-info">
-                            <!-- Single Item -->
-                            <div id="tab1" class="tab-pane fade active in">
+    <?php
+// Load JSON data
+$json_data = file_get_contents('product.json');
+$products = json_decode($json_data, true)['products'];
 
-                                <!-- Start Department Info -->
-                                <div class="row">
-                                    <div class="info title">
-                                        <div class="thumb col-md-6">
-                                            <img src="https://placehold.co/900X900" alt="Thumb">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h3 style="margin-bottom: 5px !important;">Medecine and Health</h3>
-                                            <b style="color: #004080;">Rp.12.000.000</b>
-                                            <p style="margin-top: 12px;">
-                                                Calling nothing end fertile for venture way boy. Esteem spirit temper too say adieus who direct esteem. It esteems luckily mr or picture placing drawing no. Apartments frequently or motionless on reasonable projecting expression. Way mrs end gave tall walk fact bed. 
-                                            </p>
-                                            
-                                            <a class="btn btn-theme border btn-md" href="#"><i class="fa fa-cart-plus" style="margin-right: 10px;"></i>Add to cart</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Department Info -->
+// Function to create product tabs
+function create_product_tabs($products) {
+    $tabs = '';
+    foreach ($products as $index => $product) {
+        $active_class = $index === 0 ? 'active' : '';
+        $aria_expanded = $index === 0 ? 'true' : 'false';
+        $product_id = "product" . $product['id'];
+        $tabs .= "
+            <li class=\"$active_class\">
+                <a data-toggle=\"tab\" href=\"#$product_id\" aria-expanded=\"$aria_expanded\">
+                    {$product['name']}
+                </a>
+            </li>
+        ";
+    }
+    return $tabs;
+}
 
-                              
-                            </div>
-                            <!-- End Single Item -->
-
-                          
-
+// Function to create product contents
+function create_product_contents($products) {
+    $contents = '';
+    foreach ($products as $index => $product) {
+        $active_class = $index === 0 ? 'active in' : 'fade';
+        $product_id = "product" . $product['id'];
+        $price = number_format($product['price'], 0, ',', '.');
+        $contents .= "
+            <div id=\"$product_id\" class=\"tab-pane $active_class\">
+                <div class=\"row\">
+                    <div class=\"info title\">
+                        <div class=\"thumb col-md-6\">
+                            <img src=\"{$product['image']}\" alt=\"Thumb\">
                         </div>
-                        <!-- End Tab Content -->
+                        <div class=\"col-md-6\">
+                            <h3 style=\"margin-bottom: 5px !important;\">{$product['name']}</h3>
+                            <b style=\"color: #004080;\">Rp.$price</b>
+                            <p style=\"margin-top: 12px;\">
+                                {$product['description']}
+                            </p>
+                            <a class=\"btn btn-theme border btn-md\" href=\"#\"><i class=\"fa fa-cart-plus\" style=\"margin-right: 10px;\"></i>Add to cart</a>
+                        </div>
                     </div>
+                </div>
+            </div>
+        ";
+    }
+    return $contents;
+}
+?>
+
+<!-- Start Departments -->
+<div id="produk" class="department-tabs default-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 tab-navs">
+                <div class="heading">
+                    <h4>Produk Kami</h4>
+                </div>
+                <!-- Tab Nav -->
+                <ul class="nav nav-pills">
+                    <?= create_product_tabs($products); ?>
+                </ul>
+                <!-- End Tab Nav -->
+            </div>
+            <div class="col-md-9 tab-contents">
+                <div class="row">
+                    <!-- Start Tab Content -->
+                    <div class="tab-content tab-content-info">
+                        <?= create_product_contents($products); ?>
+                    </div>
+                    <!-- End Tab Content -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Departments -->
+</div>
+<!-- End Departments -->
+
+    
 
     <!-- Start Why Choose RICO 
     ============================================= -->
@@ -898,7 +894,6 @@
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="node_modules/shopify-cartjs/dist/cart.min.js"></script>
-    <script src="node_modules/shopify-cartjs/dist/rivets-cart.min.js"></script>
+    <script src="assets/js/jquery.mycart.js"></script>
 </body>
 </html>

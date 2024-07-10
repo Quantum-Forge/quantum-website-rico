@@ -1,47 +1,52 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "name": "RICO GELAS 220ml x 48pcs",
-        "price": 15000,
-        "unit": "crt",
-        "image": "assets/img/product/220ml.png"
-      },
-      {
-        "id": 2,
-        "name": "RICO BOTOL 330ml x 24pcs",
-        "price": 26500,
-        "unit": "crt",
-        "image": "assets/img/product/330ml.png"
-      },
-      {
-        "id": 3,
-        "name": "RICO BOTOL 600ml x 24pcs",
-        "price": 32500,
-        "unit": "crt",
-        "image": "assets/img/product/600.png"
-      },
-      {
-        "id": 4,
-        "name": "RICO BOTOL 1500ml x 12pcs",
-        "price": 32500,
-        "unit": "crt",
-        "image": "assets/img/product/1500ml.png"
-      },
-      {
-        "id": 5,
-        "name": "RICO GALON + AIR (19L)",
-        "price": 52000,
-        "unit": "pcs",
-        "image": "assets/img/product/galon.png"
-      },
-      {
-        "id": 6,
-        "name": "Air Isi Ulang (19L)",
-        "price": 12000,
-        "unit": "pcs",
-        "image": "assets/img/product/galon.png"
-      }
-    ]
-  }
-  
+  "products": [
+    {
+      "id": 1,
+      "name": "RICO GELAS 220ml x 48pcs",
+      "price": 15000,
+      "unit": "crt",
+      "image": "assets/img/product/220ml.png",
+      "description": "RICO Gelas 220ml, praktis dan sempurna untuk menemani aktivitas sehari-hari. Kesegaran alami dalam kemasan gelas yang mudah dibawa ke mana saja."
+    },
+    {
+      "id": 2,
+      "name": "RICO BOTOL 330ml x 24pcs",
+      "price": 26500,
+      "unit": "crt",
+      "image": "assets/img/product/330ml.png",
+      "description": "RICO Botol 330ml, pilihan tepat untuk menjaga hidrasi Anda sepanjang hari. Botol yang ramping dan mudah digenggam, ideal untuk perjalanan dan olahraga."
+    },
+    {
+      "id": 3,
+      "name": "RICO BOTOL 600ml x 24pcs",
+      "price": 32500,
+      "unit": "crt",
+      "image": "assets/img/product/600ml.png",
+      "description": "RICO Botol 600ml, memenuhi kebutuhan hidrasi Anda dengan lebih banyak kesegaran. Cocok untuk menemani Anda di aktivitas yang lebih intens."
+    },
+    {
+      "id": 4,
+      "name": "RICO BOTOL 1500ml x 12pcs",
+      "price": 32500,
+      "unit": "crt",
+      "image": "assets/img/product/1500ml.png",
+      "description": "RICO Botol 1500ml, pas untuk stok air minum keluarga di rumah. Kesegaran alami yang lebih banyak dalam satu kemasan, memastikan Anda dan keluarga tetap terhidrasi."
+    },
+    {
+      "id": 5,
+      "name": "RICO GALON + AIR (19L)",
+      "price": 52000,
+      "unit": "pcs",
+      "image": "assets/img/product/galon.png",
+      "description": "RICO Galon 19L dengan air, solusi praktis untuk kebutuhan air minum sehari-hari. Nikmati air minum berkualitas dengan galon yang mudah digunakan."
+    },
+    {
+      "id": 6,
+      "name": "Air Isi Ulang (19L)",
+      "price": 12000,
+      "unit": "pcs",
+      "image": "assets/img/product/galon.png",
+      "description": "RICO Air Isi Ulang 19L, pilihan ekonomis untuk kebutuhan air minum rumah tangga. Tetap terhidrasi dengan biaya yang lebih terjangkau."
+    }
+  ]
+}
