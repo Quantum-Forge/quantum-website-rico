@@ -5,7 +5,7 @@ Author: validtheme
 Description:
 Version: 1.3
 
-Main Font    : roboto
+Main Font    : Poppins
 Main Color   : #004080
 
 -------------------------------------
@@ -65,7 +65,7 @@ html {
 }
 
 body {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 26px;
@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #232323;
   font-weight: normal;
   line-height: 1.2;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 0;
   margin: 0;
 }
@@ -183,7 +183,7 @@ a {
   -ms-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
   text-decoration: none;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 b, strong {
@@ -375,7 +375,7 @@ input {
 
 .btn {
   display: inline-block;
-  font-family: "roboto",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 14px;
   line-height: 25px;
   text-transform: uppercase;
@@ -873,7 +873,7 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 
 .breadcrumb-area .breadcrumb a, 
 .breadcrumb-area .breadcrumb li {
-  font-family: "roboto",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
@@ -906,7 +906,7 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 
 .top-bar-area li .info span {
   display: block;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #232323;
   text-transform: uppercase;
   line-height: 20px;
@@ -941,7 +941,7 @@ nav.navbar.bootsnav.sticked .attr-nav.social li {
 .top-bar-area.inline .info li {
   display: flex;
   align-items: center;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .top-bar-area.bg-dark.text-light .info li {
@@ -1682,7 +1682,7 @@ body,
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 400;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .top-entry-area ul li {
@@ -1691,7 +1691,7 @@ body,
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: 400;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .top-entry-area ul li:last-child {
@@ -1881,7 +1881,7 @@ body,
 }
 
 .about-area .em-services-items table thead {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   background-color: #f7f7f7;
 }
@@ -2505,7 +2505,7 @@ body,
     padding: 12px 25px;
     margin: 0;
     font-weight: 400;
-    font-family: 'roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     border-radius: 5px;
 }
@@ -2784,7 +2784,7 @@ body,
   padding-bottom: 10px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 15px;
 }
 
@@ -2830,7 +2830,7 @@ body,
 }
 
 .fun-fact-area .fun-fact .timer {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 36px;
   line-height: 1.2;
   font-weight: 700;
@@ -2848,7 +2848,7 @@ body,
 }
 
 .fun-fact-area .fun-fact .medium {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
 }
 
@@ -2932,7 +2932,7 @@ body,
   background: transparent;
   padding: 10px 35px;
   margin-top: 15px;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
@@ -3942,7 +3942,7 @@ body,
 }
 
 .doctor-details-area .tab-content li {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   padding: 10px;
 }
@@ -3993,7 +3993,7 @@ body,
 .department-items .item .info li {
   float: left;
   width: 50%;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
 }
 
@@ -4039,7 +4039,7 @@ body,
   padding: 0 15px;
   cursor: pointer;
   z-index: 1;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .mix-item-menu {
@@ -4333,7 +4333,7 @@ body,
   padding: 15px;
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #666666;
 }
 
@@ -4536,7 +4536,7 @@ body,
 .blog-area .meta .comments a {
   font-weight: 400;
   color: #666666 !important;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .blog-area .meta .comments a:hover {
@@ -4674,7 +4674,7 @@ body,
   background: #232323 none repeat scroll 0 0;
   border: medium none;
   color: #ffffff;
-  font-family: "roboto",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-weight: 500;
   letter-spacing: 1px;
   padding: 0 15px;
@@ -4794,7 +4794,7 @@ body,
 
 .sidebar-item.recent-post .meta-title {
   color: #999999;
-  font-family: "roboto",sans-serif;
+  font-family: "Poppins",sans-serif;
   margin-top: 10px;
   text-transform: uppercase;
 }
@@ -4982,7 +4982,7 @@ body,
   background: #004080 none repeat scroll 0 0;
   color: #ffffff;
   display: inline-block;
-  font-family: "roboto",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 15px;
@@ -5003,7 +5003,7 @@ body,
 
 .blog-area.single .content-box .meta .date {
   float: right;
-  font-family: "roboto",sans-serif;
+  font-family: "Poppins",sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -5120,7 +5120,7 @@ body,
 }
 
 .blog-area.single .post-tags span {
-  font-family: "roboto",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-weight: 600;
   margin-right: 5px;
   text-transform: uppercase;
@@ -5276,7 +5276,7 @@ body,
   background: transparent;
   color: #232323;
   display: inline-block;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 25px;
@@ -5378,7 +5378,7 @@ body,
   padding: 15px 35px;
   border: 2px solid #004080;
   background: transparent;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-border-radius: 5px;
@@ -5559,7 +5559,7 @@ footer .footer-top .item:last-child {
 
 footer .footer-top .item span {
   display: block;
-  font-family: "roboto",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-weight: 600;
   line-height: 24px;
   text-transform: uppercase;
@@ -5690,9 +5690,9 @@ footer.active-first .f-items .item:first-child .f-item .opening-info li .closed 
 footer .f-item.recent-post .meta-title, 
 footer .f-item.recent-post .meta-title a {
   color: #666666;
-  font-family: "roboto",sans-serif;
+  font-family: "Poppins",sans-serif;
   font-size: 12px;
-  text-transform: uppercase !important;
+FOOTERfooter-bottom  text-transform: uppercase !important;
 }
 
 footer.bg-dark .f-item.recent-post .meta-title, 
@@ -5842,7 +5842,7 @@ footer .footer-bottom.bg-light li a {
 }
 
 footer .footer-bottom li a:hover {
-  color: #004080;
+  color: #00AEEF;
 }
 
 footer .f-item.contact li i, footer .f-item.contact li p {
@@ -5854,7 +5854,7 @@ footer .f-item.contact li p {
   margin: 0;
   color: #232323;
   padding-left: 15px;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
 }
 
@@ -5870,7 +5870,7 @@ footer .f-item.contact li i {
 
 footer .f-item.contact li p span {
   display: block;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #666666;
   text-transform: none;
 }
@@ -5880,7 +5880,7 @@ footer.bg-dark .f-item.contact li p span {
 }
 
 footer .f-item.contact li p a {
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #666666;
 }
 
@@ -6021,6 +6021,7 @@ footer .footer-bottom .social li a:hover {
   display: block;
   font-weight: bold;
   font-size: 12px;
+  line-height: 13px;
 }
 
 .item-name:hover {
@@ -6086,11 +6087,13 @@ footer .footer-bottom .social li a:hover {
   cursor: pointer;
 }
 
-.subtotal {
+.subtotal,
+.ongkir,
+.grandtotal {
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
-  margin: 20px 0;
+  font-size: 15px;
+  margin: -2px 0;
 }
 
 .cart-actions {
@@ -6102,7 +6105,7 @@ footer .footer-bottom .social li a:hover {
 .checkout-btn {
   padding: 10px 35px;
   margin-top: 15px;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
@@ -6168,7 +6171,7 @@ footer .footer-bottom .social li a:hover {
 .badge-custom {
   position: absolute;
   top: -3px;
-  right: -5px;
+  right: -14px;
   padding: 0px 10px;
   border-radius: 50%;
   background-color: #004080;

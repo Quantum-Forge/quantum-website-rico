@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "RICO GELAS 220ml x 48pcs",
+      "name": "RICO GELAS 220ml",
       "price": 15000,
       "unit": "crt",
       "image": "assets/img/product/220ml.png",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "name": "RICO BOTOL 330ml x 24pcs",
+      "name": "RICO BOTOL 330ml",
       "price": 26500,
       "unit": "crt",
       "image": "assets/img/product/330ml.png",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "name": "RICO BOTOL 600ml x 24pcs",
+      "name": "RICO BOTOL 600ml",
       "price": 32500,
       "unit": "crt",
       "image": "assets/img/product/600ml.png",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "name": "RICO BOTOL 1500ml x 12pcs",
+      "name": "RICO BOTOL 1500ml",
       "price": 32500,
       "unit": "crt",
       "image": "assets/img/product/1500ml.png",
@@ -34,7 +34,7 @@
     },
     {
       "id": 5,
-      "name": "RICO GALON + AIR (19L)",
+      "name": "RICO GALON + AIR 19L",
       "price": 52000,
       "unit": "pcs",
       "image": "assets/img/product/galon.png",
@@ -42,10 +42,10 @@
     },
     {
       "id": 6,
-      "name": "Air Isi Ulang (19L)",
+      "name": "RICO AIR ISI ULANG 19L",
       "price": 12000,
       "unit": "pcs",
-      "image": "assets/img/product/galon.png",
+      "image": "assets/img/product/air_isi_ulang.png",
       "description": "RICO Air Isi Ulang 19L, pilihan ekonomis untuk kebutuhan air minum rumah tangga. Tetap terhidrasi dengan biaya yang lebih terjangkau."
     }
   ]

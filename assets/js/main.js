@@ -313,10 +313,14 @@
            /* ==================================================
             Cart Function
          ===============================================*/
-         let cart = [];
+            let cart = [];
+            const ongkir = 5000; // Shipping cost
+
             function updateCartUI() {
                 const cartItemsContainer = $('#cart-items');
                 const cartSubtotalElement = $('#cart-subtotal');
+                const cartOngkirElement = $('#cart-ongkir');
+                const cartGrandtotalElement = $('#cart-grandtotal');
                 const badgeElement = $('.badge-custom'); // Select the badge element
                 
                 cartItemsContainer.empty();
@@ -330,11 +334,11 @@
                     
                     const itemElement = `
                         <div class="cart-item">
-                            <img src="${item.image}" alt="Product Image" width="80" height="100">
+                            <img src="${item.image}" alt="Product Image" width="80" height="80">
                             <div class="item-details">
                                 <a href="#" class="item-name">${item.name}</a>
                                 <div class="quantity">
-                                    <button class="quantity-btn" onclick="changeQuantity(${item.id}, -1)">-</button>
+                                    <button class="quantity-btn" onclick="changeQuantity(${item.id}, -1)" ${item.quantity <= 5 ? 'disabled' : ''}>-</button>
                                     <input type="text" readonly value="${item.quantity}" min="1">
                                     <button class="quantity-btn" onclick="changeQuantity(${item.id}, 1)">+</button>
                                 </div>
@@ -347,63 +351,98 @@
                 });
 
                 cartSubtotalElement.text(`Rp. ${subtotal.toLocaleString('id-ID')}`);
+                cartOngkirElement.text(`Rp. ${ongkir.toLocaleString('id-ID')}`);
+                const grandtotal = subtotal + ongkir;
+                cartGrandtotalElement.text(`Rp. ${grandtotal.toLocaleString('id-ID')}`);
                 badgeElement.text(totalQuantity); // Update the badge with the total quantity
             }
 
-     
-         function changeQuantity(productId, delta) {
-             const cartItem = cart.find(item => item.id === productId);
-             if (cartItem) {
-                 cartItem.quantity += delta;
-                 if (cartItem.quantity <= 0) {
-                     removeFromCart(productId);
-                 } else {
-                     updateCartUI();
-                 }
-             }
-         }
-     
-         function removeFromCart(productId) {
-             cart = cart.filter(item => item.id !== productId);
-             updateCartUI();
-             e.preventDefault();
-         }
-     
-         $(document).on('click', '.add-to-cart', function(e) {
-            e.preventDefault();
-            
-            const isSideNavOpen = $("nav.navbar.bootsnav > .side").hasClass("on");
-            
-            if (!isSideNavOpen) {
-                $("nav.navbar.bootsnav > .side").addClass("on");
-                $("body").addClass("on-side");
+            function changeQuantity(productId, delta) {
+                const cartItem = cart.find(item => item.id === productId);
+                if (cartItem) {
+                    const newQuantity = cartItem.quantity + delta;
+                    if (newQuantity >= 5) {
+                        cartItem.quantity = newQuantity;
+                    }
+                    updateCartUI();
+                }
             }
-            
-            const productId = $(this).data('id');
-            const productName = $(this).data('name');
-            const productPrice = $(this).data('price');
-            const productImage = $(this).data('image');
-        
-            const cartItem = cart.find(item => item.id === productId);
-            
-            if (cartItem) {
-                cartItem.quantity++;
-            } else {
-                cart.push({
-                    id: productId,
-                    name: productName,
-                    price: productPrice,
-                    quantity: 1,
-                    image: productImage
+
+            function removeFromCart(productId) {
+                cart = cart.filter(item => item.id !== productId);
+                updateCartUI();
+            }
+
+            $(document).on('click', '.add-to-cart', function(e) {
+                e.preventDefault();
+                
+                const isSideNavOpen = $("nav.navbar.bootsnav > .side").hasClass("on");
+                
+                if (!isSideNavOpen) {
+                    $("nav.navbar.bootsnav > .side").addClass("on");
+                    $("body").addClass("on-side");
+                }
+                
+                const productId = $(this).data('id');
+                const productName = $(this).data('name');
+                const productPrice = $(this).data('price');
+                const productImage = $(this).data('image');
+
+                const cartItem = cart.find(item => item.id === productId);
+                
+                if (cartItem) {
+                    cartItem.quantity += 5; // Add 5 to the existing quantity
+                } else {
+                    cart.push({
+                        id: productId,
+                        name: productName,
+                        price: productPrice,
+                        quantity: 5, // Initialize with 5
+                        image: productImage
+                    });
+                }
+                
+                updateCartUI();
+            });
+
+            $('#cart-form').submit(function(e) {
+                e.preventDefault();
+
+                if (cart.length === 0) {
+                    alert('Keranjang kosong. Tambahkan produk sebelum checkout.');
+                    return;
+                }
+
+                const nama = $('#nama').val();
+                const phoneNumber = $('#phone_number').val();
+                const address = $('#address').val();
+
+                if (!nama || !phoneNumber || !address) {
+                    alert('Silakan isi semua informasi pengiriman.');
+                    return;
+                }
+
+                let orderDetails = `Nama: ${nama}\nTelfon: ${phoneNumber}\nAlamat: ${address}\n-----------------------------\n*DETAIL ORDER RICO:*\n`;
+                orderDetails += `-----------------------------\n`;
+                cart.forEach(item => {
+                    orderDetails += `${item.name}: ${item.quantity} crt\n`; // You can replace 'crt' with the unit of the item if needed
                 });
-            }
-            
-            updateCartUI();
-        });
-        
+
+                const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                const grandtotal = subtotal + ongkir;
+
+                orderDetails += `-----------------------------\n`;
+                orderDetails += `Subtotal: Rp. ${subtotal.toLocaleString('id-ID')}\n`;
+                orderDetails += `Ongkir: Rp. ${ongkir.toLocaleString('id-ID')}\n`;
+                orderDetails += `*Grandtotal: Rp. ${grandtotal.toLocaleString('id-ID')}*\n`;
+
+                const whatsappUrl = `https://api.whatsapp.com/send?phone=6282192059768&text=${encodeURIComponent(orderDetails)}`;
+                window.open(whatsappUrl, '_blank');
+            });
+
      
-         window.changeQuantity = changeQuantity;
-         window.removeFromCart = removeFromCart;
+            window.changeQuantity = changeQuantity;
+            window.removeFromCart = removeFromCart;
 
         /* ==================================================
             Nice Select Init
@@ -445,6 +484,20 @@
                 });
                 return false;
             });
+        });
+
+         /* ==================================================
+            Appointment Form Validations
+        ================================================== */
+        $('#appointment-form').on('submit', function(e) {
+            e.preventDefault();
+    
+            var department = $('#department').val();
+            var name = $('#name').val();
+            var message = `Halo, Nama saya ${name}. Saya dari pihak ${department}. Saya ingin membuat janji untuk penjelasan produk. Kira-kira kapan pihak RICO bisa bertemu? Terima kasih!`;
+            var whatsappUrl = `https://wa.me/6282192059768?text=${message}`;
+    
+            window.open(whatsappUrl, '_blank');
         });
 
     }); // end document ready function

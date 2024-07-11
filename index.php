@@ -9,7 +9,7 @@
     <meta name="description" content="Menjadi pilihan utama untuk air minum berkualitas sejak tahun 2018. Kami menghadirkan kesegaran alami yang diambil langsung dari sumber mata air pegunungan, diproses dengan teknologi canggih untuk memastikan setiap tetesnya murni dan sehat. Komitmen kami adalah memberikan yang terbaik bagi kesehatan dan kesejahteraan Anda. Nikmati rasa segar dan kemurnian alami yang hanya bisa Anda dapatkan dari RICO.">
 
     <!-- ========== Page Title ========== -->
-    <title>Air Minum Segar RICO - Terlindungi dan Sehat</title>
+    <title>RICO Air Minum Segar - Kesehatan Dalam Setiap Tetesnya</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -70,7 +70,7 @@
                                     <i class="fas fa-envelope-open"></i>
                                 </div>
                                 <div class="info">
-                                    <span>Email</span> antariksaprakarsautama@gmail.com
+                                    <span>Email</span> info@ricosegar.com
                                 </div>
                             </li>
                             <li>
@@ -78,7 +78,7 @@
                                     <i class="fas fa-building"></i>
                                 </div>
                                 <div class="info">
-                                    <span>Kantor</span> PT Antariksa Prakarsa Utama
+                                    <span>DISTRIBUTOR</span> PT Antariksa Prakarsa Utama
                                 </div> 
                             </li>
                         </ul>
@@ -90,16 +90,13 @@
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
                         </li>
                         <li>
-                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -185,7 +182,7 @@
             </div>
 
             <!-- Start Cart Menu -->
-            <form class="side">
+            <form class="side" id="cart-form">
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
                 <div class="widget">
                     <!-- cart content -->
@@ -197,18 +194,26 @@
                         <span>Subtotal:</span>
                         <span id="cart-subtotal">Rp. 0</span>
                     </div>
+                    <div class="ongkir">
+                        <span>Ongkir:</span>
+                        <span id="cart-ongkir">Rp. 5.000</span>
+                    </div>
+                    <b class="grandtotal">
+                        <span>Grandtotal:</span>
+                        <span id="cart-grandtotal">Rp. 0</span>
+                    </b>
                 </div>
                 <div class="widget">
                     <h4 class="title">Alamat</h4>
                     <div class="row gutter-1">
                         <div class="col-sm-12">
-                            <input type="text" class="form-control" placeholder="Isi Nama..." required>  
+                            <input type="text" id="nama" class="form-control" placeholder="Nama..." required>  
                         </div>
                         <div class="col-md-12">
-                            <input type="number" class="form-control" placeholder="Isi Nomor Telfon..." required>  
+                            <input type="number" id="phone_number" class="form-control" placeholder="Handphone..." required>  
                         </div>
                         <div class="col-md-12 comments">
-                            <textarea name="" rows="8" class="form-control" placeholder="Isi Alamat..." id="" required></textarea>
+                            <textarea name="" rows="5" id="address" class="form-control" placeholder="Alamat..." id="" required></textarea>
                         </div>
                     </div>
                     <div class="cart-actions">
@@ -239,36 +244,36 @@
                                     <p data-animation="animated slideInUp">
                                     Setiap tetes air RICO adalah ciptaan penuh dedikasi untuk kualitas dan keamanan. Melalui proses selektif yang ketat, kami menjamin Anda hanya mendapatkan yang terbaik dari sumber-sumber alam yang murni.
                                     </p>
-                                    <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="#">Belanja Sekarang</a>
+                                    <a data-animation="animated slideInUp" class="btn btn-light border btn-md" href="#produk">Belanja Sekarang</a>
                                 </div>
 
                                 <!-- Start Appoinment Form -->
                                 <div class="col-md-5 col-sm-6 appoinment">
                                     <div class="appoinment-box">
                                         <div class="heading">
-                                            <h2>Buat Janji</h2>
+                                            <h2>Daftar Untuk Buat Janji</h2>
                                         </div>
-                                        <form action="#">
+                                        <form action="#" id="appointment-form">
                                             <div class="row">
                                             <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <select>
+                                                        <select id="department" required>
                                                             <option disabled selected>Departemen...</option>
-                                                            <option value="1">Perorangan</option>
-                                                            <option value="2">Perusahaan</option>
-                                                            <option value="4">Organisasi</option>
-                                                            <option value="5">Komunitas</option>
+                                                            <option value="Perorangan">Perorangan</option>
+                                                            <option value="Perusahaan">Perusahaan</option>
+                                                            <option value="Organisasi">Organisasi</option>
+                                                            <option value="Komunitas">Komunitas</option>
                                                         </select>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <input class="form-control" id="name" name="name" placeholder="Nama..." type="text">
+                                                        <input class="form-control" id="name" placeholder="Nama..." type="text" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <input class="form-control" id="name" name="name" placeholder="Nomor Telfon..." type="text">
+                                                        <input class="form-control" id="phone" placeholder="Nomor Telfon..." type="text" required>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-12">
@@ -754,7 +759,7 @@
                             <i class="fas fa-envelope-open"></i>
                             <h4>Email</h4>
                             <p>
-                                antariksaprakarsautama@gmail.com
+                                info@ricosegar.com
                             </p>
                         </div>
                     </div>
@@ -767,99 +772,86 @@
 
     <!-- Start Footer 
     ============================================= -->
-    <footer>
-        <div class="container">
-            <div class="row">
-
-                <div class="f-items default-padding">
-
-                    <!-- Single Item -->
-                    <div class="col-md-4 item">
-                        <div class="f-item">
-                            <h4>Tentang Kami</h4>
-                            <p>
-                                Excellence decisively nay man yet impression for contrasted remarkably. There spoke happy for you are out. Fertile how old address.
-                            </p>
-                            <h2><i class="fas fa-phone"></i> +62 821 9205 9768</h2>
-                        </div>
+   
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="f-items default-padding">
+                <!-- Single Item -->
+                <div class="col-md-4 item">
+                    <div class="f-item">
+                        <h4>Tentang Kami</h4>
+                        <p>
+                            RICO adalah merek air minum dalam kemasan yang berkualitas tinggi, menawarkan kesegaran dan kesehatan dengan rasa yang alami dan murni. 
+                        </p>
+                        <h2><i class="fas fa-phone"></i> +62 821 9205 9768</h2>
                     </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 item">
-                        <div class="f-item link">
-                            <h4>Produk Kami</h4>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="col-md-4 item">
+                    <div class="f-item link">
+                        <h4>Produk Kami</h4>
+                        <ul>
+                            <?php
+                                $json_data = file_get_contents('product.json');
+                                $products = json_decode($json_data, true);
+                                
+                                foreach ($products['products'] as $product) {
+                                    echo '<li><a href="#produk"><i class="fas fa-arrow-right"></i> ' . $product['name'] . '</a></li>';
+                                }
+                            ?>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                <!-- Single Item -->
+                <div class="col-md-4 item">
+                    <div class="f-item twitter-widget">
+                        <h4>Jam Kerja</h4>
+                        <div class="opening-info">
                             <ul>
-                                <li>
-                                    <a href="#"><i class="fas fa-arrow-right"></i> Medecine and Health</a>
+                                <li> <span> Senin - Sabtu :  </span>
+                                  <div class="pull-right"> 7.30 WITA - 18.00 WITA </div>
                                 </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-arrow-right"></i> Dental Care and Surgery</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-arrow-right"></i> Eye Treatment</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-arrow-right"></i> Children Chare</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-arrow-right"></i> Traumatology</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-arrow-right"></i> X-ray</a>
+                                <li> <span> Minggu : </span>
+                                  <div class="pull-right closed"> Closed </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="col-md-4 item">
-                        <div class="f-item twitter-widget">
-                            <h4>Jam Kerja</h4>
-                            <div class="opening-info">
-                                <ul>
-                                    <li> <span> Mon - Tues :  </span>
-                                      <div class="pull-right"> 6.00 am - 10.00 pm </div>
-                                    </li>
-                                    <li> <span> Wednes - Thurs :</span>
-                                      <div class="pull-right"> 8.00 am - 6.00 pm </div>
-                                    </li>
-                                    <li> <span> Sun : </span>
-                                      <div class="pull-right closed"> Closed </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
+                </div>
+                <!-- End Single Item -->
+            </div>
+        </div>
+    </div>
+    <!-- Start Footer Bottom -->
+    <div class="footer-bottom bg-theme text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; Copyright <?php echo date('Y'); ?>. All Rights Reserved by PT Antariksa Prakarsa Utama</p>
+                </div>
+                <div class="col-md-6 text-right link">
+                    <ul>
+                        <li>
+                            <a href="#">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="#">License</a>
+                        </li>
+                        <li>
+                            <a href="https://quantumitco.com/">Support</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!-- Start Footer Bottom -->
-        <div class="footer-bottom bg-theme text-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>&copy; Copyright 2019. All Rights Reserved by PT Antariksa Prakarsa Utama</p>
-                    </div>
-                    <div class="col-md-6 text-right link">
-                        <ul>
-                            <li>
-                                <a href="#">Terms of user</a>
-                            </li>
-                            <li>
-                                <a href="#">License</a>
-                            </li>
-                            <li>
-                                <a href="#">Support</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Footer Bottom -->
-    </footer>
-    <!-- End Footer -->
+    </div>
+    <!-- End Footer Bottom -->
+</footer>
+<!-- End Footer -->
+
 
 
     <!-- jQuery Frameworks
