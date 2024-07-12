@@ -12,7 +12,7 @@
     <title>RICO Air Minum Segar - Kesehatan Dalam Setiap Tetesnya</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -251,7 +251,7 @@
                                 <div class="col-md-5 col-sm-6 appoinment">
                                     <div class="appoinment-box">
                                         <div class="heading">
-                                            <h2>Daftar Untuk Buat Janji</h2>
+                                            <h2>Formulir Kontak</h2>
                                         </div>
                                         <form action="#" id="appointment-form">
                                             <div class="row">
@@ -328,7 +328,7 @@
                         <ul class="nav nav-pills">
                             <li class="active">
                                 <a data-toggle="tab" href="#tab1" aria-expanded="true">
-                                    <i class="fas fa-user-tie"></i> Konsultasi
+                                    <i class="fas fa-user-tie"></i> Penjualan
                                 </a>
                             </li>
                             <li>
@@ -556,7 +556,7 @@
                                     <i class="fas fa-tint"></i>
                                 </div>
                                 <p>
-                                    Minum air putih yang cukup membantu menjaga hidrasi tubuh, yang penting untuk menjaga fungsi organ-organ tubuh berjalan dengan baik.
+                                    Minum air putih yang cukup membantu menjaga hidrasi tubuh untuk menjaga fungsi organ tubuh berjalan dengan baik.
                                 </p>
                                 <a class="btn btn-theme border circle btn-md" href="#">Baca Lebih Lanjut</a>
                             </div>
