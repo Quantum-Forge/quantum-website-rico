@@ -185,23 +185,29 @@
             <form class="side" id="cart-form">
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
                 <div class="widget">
+                    <h4 class="title">pengiriman</h4>
+                    <p>Layanan pengantaran kami terbatas untuk wilayah Makassar dan sekitarnya dengan ongkos kirim Rp. 5.000 dengan minimal pembelian 5 unit.</p>
+                </div>
+                <div class="widget">
                     <!-- cart content -->
                     <h4 class="title">Keranjang</h4>
-                    <div id="cart-items">
-                        <!-- Cart items will be dynamically added here -->
+                    <div id="cart-content">
+                        <div id="cart-items">
+                            <!-- Cart items will be dynamically added here -->
+                        </div>
+                        <div class="subtotal">
+                            <span>Subtotal:</span>
+                            <span id="cart-subtotal">Rp. 0</span>
+                        </div>
+                        <div class="ongkir">
+                            <span>Ongkir:</span>
+                            <span id="cart-ongkir">Rp. 5.000</span>
+                        </div>
+                        <b class="grandtotal">
+                            <span>Grandtotal:</span>
+                            <span id="cart-grandtotal">Rp. 5.000</span>
+                        </b>
                     </div>
-                    <div class="subtotal">
-                        <span>Subtotal:</span>
-                        <span id="cart-subtotal">Rp. 0</span>
-                    </div>
-                    <div class="ongkir">
-                        <span>Ongkir:</span>
-                        <span id="cart-ongkir">Rp. 5.000</span>
-                    </div>
-                    <b class="grandtotal">
-                        <span>Grandtotal:</span>
-                        <span id="cart-grandtotal">Rp. 0</span>
-                    </b>
                 </div>
                 <div class="widget">
                     <h4 class="title">Alamat</h4>
