@@ -337,7 +337,7 @@
                  
                  const itemElement = `
                      <div class="cart-item">
-                         <img src="${item.image}" alt="Product Image" width="80" height="100">
+                         <img src="${item.image}" alt="Product Image" width="80" height="80">
                          <div class="item-details">
                              <a href="#" class="item-name">${item.name}</a>
                              <div class="quantity">
@@ -448,7 +448,7 @@
              orderDetails += `Ongkir: Rp. ${ongkir.toLocaleString('id-ID')}\n`;
              orderDetails += `**Grandtotal: Rp. ${grandtotal.toLocaleString('id-ID')}**\n`;
          
-             const whatsappUrl = `https://api.whatsapp.com/send?phone=6289505991562&text=${encodeURIComponent(orderDetails)}`;
+             const whatsappUrl = `https://api.whatsapp.com/send?phone=6282192059768&text=${encodeURIComponent(orderDetails)}`;
              window.open(whatsappUrl, '_blank');
          });
          
