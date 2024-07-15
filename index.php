@@ -188,14 +188,13 @@
                     <h4 class="title">pengiriman</h4>
                     <p>Layanan pengantaran kami terbatas untuk wilayah Makassar dan sekitarnya dengan ongkos kirim Rp. 5.000 dengan minimal pembelian 5 unit.</p>
                 </div>
-                <div id="empty-cart" class="widget" style="display: block;">
-                    <h4 class="title">Keranjang</h4>
-                    <p>No Items!</p>
-                </div>
-                <div id="filled-cart" class="widget" style="display: none;">
+                <div class="widget">
                     <!-- cart content -->
                     <h4 class="title">Keranjang</h4>
-                    <div id="cart-content">
+                    <div id="empty-cart" style="display: block;">
+                        <p>Tidak Ada Barang!</p>
+                    </div>
+                    <div id="filled-cart" style="display: none;">
                         <div id="cart-items">
                             <!-- Cart items will be dynamically added here -->
                         </div>
