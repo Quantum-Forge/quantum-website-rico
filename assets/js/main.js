@@ -399,6 +399,7 @@
              const productName = $(this).data('name');
              const productPrice = $(this).data('price');
              const productImage = $(this).data('image');
+             const productUnit = $(this).data('unit');
          
              const cartItem = cart.find(item => item.id === productId);
              
@@ -410,7 +411,8 @@
                      name: productName,
                      price: productPrice,
                      quantity: 5, // Initialize with 5
-                     image: productImage
+                     image: productImage,
+                     unit: productUnit
                  });
              }
              
@@ -437,7 +439,7 @@
              let orderDetails = `Nama: ${nama}\nTelfon: ${phoneNumber}\nAlamat: ${address}\n-----------------------------\nDATA ORDER RICO\n`;
          
              cart.forEach(item => {
-                 orderDetails += `${item.name}: ${item.quantity} crt\n`; // You can replace 'crt' with the unit of the item if needed
+                 orderDetails += `${item.name}: ${item.quantity} ${item.unit}\n`; // You can replace 'crt' with the unit of the item if needed
              });
          
              const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);

@@ -453,7 +453,7 @@
                                 <p style=\"margin-top: 12px;\">
                                     {$product['description']}
                                 </p>
-                                <a class=\"btn btn-theme border btn-md add-to-cart\" href=\"#\" data-id=\"{$product['id']}\" data-name=\"{$product['name']}\" data-price=\"{$product['price']}\" data-image=\"{$product['image']}\"><i class=\"fa fa-cart-plus\" style=\"margin-right: 10px;\"></i>Add to cart</a>
+                                <a class=\"btn btn-theme border btn-md add-to-cart\" href=\"#\" data-unit=\"{$product['unit']}\" data-id=\"{$product['id']}\" data-name=\"{$product['name']}\" data-price=\"{$product['price']}\" data-image=\"{$product['image']}\"><i class=\"fa fa-cart-plus\" style=\"margin-right: 10px;\"></i>Add to cart</a>
                             </div>
                         </div>
                     </div>
