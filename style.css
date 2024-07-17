@@ -5830,8 +5830,12 @@ footer .footer-bottom.bg-light p {
   color: #666666;
 }
 
+footer .footer-bottom p a:hover {
+  color: #00AEEF;
+}
+
 footer .footer-bottom p a {
-  color: #004080;
+  color: #ffffff;
 }
 
 footer .footer-bottom .text-right li {

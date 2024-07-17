@@ -436,8 +436,8 @@
                  return;
              }
          
-             let orderDetails = `Nama: ${nama}\nTelfon: ${phoneNumber}\nAlamat: ${address}\n-----------------------------\nDATA ORDER RICO\n`;
-         
+             let orderDetails = `Nama: ${nama}\nTelfon: ${phoneNumber}\nAlamat: ${address}\n-----------------------------\n###### *DATA ORDER RICO* ######\n`;
+             orderDetails += `-----------------------------\n`;
              cart.forEach(item => {
                  orderDetails += `${item.name}: ${item.quantity} ${item.unit}\n`; // You can replace 'crt' with the unit of the item if needed
              });
@@ -448,7 +448,7 @@
              orderDetails += `-----------------------------\n`;
              orderDetails += `Subtotal: Rp. ${subtotal.toLocaleString('id-ID')}\n`;
              orderDetails += `Ongkir: Rp. ${ongkir.toLocaleString('id-ID')}\n`;
-             orderDetails += `**Grandtotal: Rp. ${grandtotal.toLocaleString('id-ID')}**\n`;
+             orderDetails += `*Grandtotal: Rp. ${grandtotal.toLocaleString('id-ID')}*\n`;
          
              const whatsappUrl = `https://api.whatsapp.com/send?phone=6282192059768&text=${encodeURIComponent(orderDetails)}`;
              window.open(whatsappUrl, '_blank');

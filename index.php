@@ -839,7 +839,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; Copyright <?php echo date('Y'); ?>. All Rights Reserved by PT Antariksa Prakarsa Utama</p>
+                    <p>&copy; Copyright <?php echo date('Y'); ?>. Powered by <a class="text-light" href="https://quantumitco.com/">Quantum Forge Software Makassar</a></p>
                 </div>
                 <div class="col-md-6 text-right link">
                     <ul>
