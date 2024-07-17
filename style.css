@@ -5693,7 +5693,7 @@ footer .f-item.recent-post .meta-title a {
   color: #666666;
   font-family: "Poppins",sans-serif;
   font-size: 12px;
-FOOTERfooter-bottom  text-transform: uppercase !important;
+/* FOOTERfooter-bottom  text-transform: uppercase !important; */
 }
 
 footer.bg-dark .f-item.recent-post .meta-title, 

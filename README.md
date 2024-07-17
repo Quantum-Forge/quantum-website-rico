@@ -1,60 +1,59 @@
-Untuk meminify file JavaScript `assets/js/main.js` menggunakan Terser, Anda dapat mengikuti langkah-langkah berikut:
+Berikut adalah panduan lengkap untuk meminify file JavaScript dan CSS menggunakan Terser dan PostCSS dengan cssnano. 
 
-### 1. Install Terser
-Pertama, Anda perlu menginstall Terser melalui NPM. Pastikan Anda sudah memiliki Node.js dan NPM terinstal di sistem Anda.
+### 1. Install Terser dan PostCSS dengan cssnano
+
+Pertama, Anda perlu menginstall Terser, PostCSS, dan cssnano melalui NPM. Pastikan Anda sudah memiliki Node.js dan NPM terinstal di sistem Anda.
 
 Buka terminal atau command prompt dan jalankan perintah berikut:
+
 ```bash
-npm install terser --save-dev
+npm install terser postcss-cli cssnano --save-dev
 ```
 
-### 2. Minify Menggunakan Terser
-Setelah Terser terinstal, Anda bisa menggunakan perintah `npx` untuk menjalankan Terser dan meminify file JavaScript Anda.
+### 2. Buat File Konfigurasi untuk PostCSS
 
-Berikut adalah perintah untuk meminify `assets/js/main.js` dan output-nya ke file `assets/js/main.min.js`:
-```bash
-npx terser assets/js/main.js -o assets/js/main.min.js
+Buat file konfigurasi PostCSS (`postcss.config.js`) untuk menggunakan cssnano:
+
+```js
+module.exports = {
+  plugins: [
+    require('cssnano')({
+      preset: 'default',
+    }),
+  ],
+};
 ```
 
-### 3. Menambahkan Script ke package.json
-Untuk memudahkan, Anda juga bisa menambahkan script ke file `package.json` sehingga Anda hanya perlu menjalankan perintah sederhana untuk meminify file JavaScript.
+### 3. Tambahkan Script ke `package.json`
+
+Untuk memudahkan, Anda bisa menambahkan script untuk meminify file JavaScript dan CSS ke file `package.json`.
 
 1. Buka file `package.json` Anda.
 2. Tambahkan script berikut di bagian `scripts`:
+
    ```json
    "scripts": {
-     "minify-js": "terser assets/js/main.js -o assets/js/main.min.js"
+     "minify-js": "terser assets/js/main.js -o assets/js/main.min.js",
+     "minify-css": "postcss assets/css/main.css -o assets/css/main.min.css"
    }
    ```
 
-3. Jalankan script ini dengan perintah:
-   ```bash
-   npm run minify-js
-   ```
+### 4. Menjalankan Proses Minifikasi
 
-### Contoh Lengkap package.json
-Berikut adalah contoh lengkap dari file `package.json`:
-```json
-{
-  "name": "your-project-name",
-  "version": "1.0.0",
-  "description": "Your project description",
-  "main": "index.js",
-  "scripts": {
-    "minify-js": "terser assets/js/main.js -o assets/js/main.min.js"
-  },
-  "author": "Your Name",
-  "license": "ISC",
-  "devDependencies": {
-    "terser": "^5.7.0"
-  }
-}
-```
+Setelah menambahkan script di `package.json`, Anda dapat menjalankan proses minifikasi kapan saja dengan perintah berikut:
 
-### Menjalankan Proses Minifikasi
-Setelah menambahkan script di `package.json`, Anda dapat menjalankan proses minifikasi kapan saja dengan perintah:
+Untuk meminify JavaScript:
+
 ```bash
 npm run minify-js
 ```
 
-Ini akan menjalankan Terser dan meminify `assets/js/main.js`, lalu menyimpan hasilnya ke `assets/js/main.min.js`.
+Untuk meminify CSS:
+
+```bash
+npm run minify-css
+```
+
+### Kesimpulan
+
+Dengan langkah-langkah di atas, Anda telah mengatur proyek Anda untuk meminify file JavaScript menggunakan Terser dan file CSS menggunakan PostCSS dengan cssnano. Anda dapat dengan mudah menjalankan proses minifikasi menggunakan perintah sederhana dari NPM scripts yang telah Anda tambahkan ke `package.json`.

@@ -2,8 +2,12 @@
   "devDependencies": {
     "terser": "^5.31.2"
   },
- "scripts": {
-  "minify-js": "terser assets/js/main.js -o assets/js/main.min.js"
-}
-
+  "scripts": {
+    "minify-js": "terser assets/js/main.js -o assets/js/main.min.js",
+     "minify-css": "postcss style.css -o style.min.css"
+  },
+  "dependencies": {
+    "cssnano": "^7.0.4",
+    "postcss-cli": "^11.0.0"
+  }
 }
