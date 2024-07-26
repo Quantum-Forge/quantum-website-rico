@@ -341,7 +341,7 @@
                          <div class="item-details">
                              <a href="#" class="item-name">${item.name}</a>
                              <div class="quantity">
-                                 <button class="quantity-btn" onclick="changeQuantity(${item.id}, -1)" ${item.quantity <= 5 ? 'disabled' : ''}>-</button>
+                                 <button class="quantity-btn" onclick="changeQuantity(${item.id}, -1)" ${item.quantity <= 1 ? 'disabled' : ''}>-</button>
                                  <input type="text" readonly value="${item.quantity}" min="1">
                                  <button class="quantity-btn" onclick="changeQuantity(${item.id}, 1)">+</button>
                              </div>
@@ -373,7 +373,7 @@
              const cartItem = cart.find(item => item.id === productId);
              if (cartItem) {
                  const newQuantity = cartItem.quantity + delta;
-                 if (newQuantity >= 5) {
+                 if (newQuantity >= 1) {
                      cartItem.quantity = newQuantity;
                  }
                  updateCartUI();
@@ -404,13 +404,13 @@
              const cartItem = cart.find(item => item.id === productId);
              
              if (cartItem) {
-                 cartItem.quantity += 5; // Add 5 to the existing quantity
+                 cartItem.quantity += 1; // Add 1 to the existing quantity
              } else {
                  cart.push({
                      id: productId,
                      name: productName,
                      price: productPrice,
-                     quantity: 5, // Initialize with 5
+                     quantity: 1, // Initialize with 1
                      image: productImage,
                      unit: productUnit
                  });
@@ -424,6 +424,13 @@
          
              if (cart.length === 0) {
                  alert('Keranjang kosong. Tambahkan produk sebelum checkout.');
+                 return;
+             }
+
+             const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+             if (totalQuantity < 5) {
+                 alert('Total quantity harus minimal 5 untuk checkout.');
                  return;
              }
          
