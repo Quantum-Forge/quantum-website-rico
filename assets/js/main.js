@@ -316,6 +316,15 @@
          let cart = [];
          const ongkir = 5000; // Shipping cost
          
+         // Load cart from Local Storage
+        $(document).ready(function() {
+            const storedCart = localStorage.getItem('cart');
+            if (storedCart) {
+                cart = JSON.parse(storedCart);
+                updateCartUI();
+            }
+        });
+
          function updateCartUI() {
              const cartItemsContainer = $('#cart-items');
              const cartSubtotalElement = $('#cart-subtotal');
@@ -367,6 +376,8 @@
                  emptyCartWidget.hide();
                  filledCartWidget.show();
              }
+              // Save cart to Local Storage
+            localStorage.setItem('cart', JSON.stringify(cart));
          }
          
          function changeQuantity(productId, delta) {
@@ -459,6 +470,14 @@
          
              const whatsappUrl = `https://api.whatsapp.com/send?phone=6282192059768&text=${encodeURIComponent(orderDetails)}`;
              window.open(whatsappUrl, '_blank');
+
+           // Clear cart and form, then refresh page
+            cart = [];
+            localStorage.removeItem('cart');
+            updateCartUI();
+            $('#cart-form')[0].reset();
+            localStorage.removeItem('formData');
+            location.reload();
          });
          
      
