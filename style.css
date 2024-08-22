@@ -217,10 +217,13 @@ b, strong {
 
 input, select {
   border: 1px solid #e7e7e7;
-  border-radius: inherit;
-  box-shadow: inherit;
+  border-radius: 4px; /* Ubah sesuai kebutuhan */
+  box-shadow: none; /* Atur sesuai dengan kebutuhan */
   min-height: 50px;
-  box-sizing: border-box;
+  padding: 10px; /* Tambahkan padding agar teks tidak terlalu dekat dengan border */
+  font-size: 16px; /* Atur ukuran font agar konsisten */
+  line-height: 1.5; /* Untuk jarak baris yang konsisten */
+  
 }
 /* Default CSS */
 .container-half {

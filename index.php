@@ -282,7 +282,7 @@
                                             <div class="col-md-12">
                                                     <div class="form-group">
                                                         <select class="form-control" id="department" required>
-                                                            <option disabled selected>Departemen...</option>
+                                                            <option disabled selected>Pilih Departemen...</option>
                                                             <option value="Perorangan">Perorangan</option>
                                                             <option value="Perusahaan">Perusahaan</option>
                                                             <option value="Organisasi">Organisasi</option>
