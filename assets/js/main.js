@@ -313,176 +313,217 @@
            /* ==================================================
             Cart Function
          ===============================================*/
-         let cart = [];
-         const ongkir = 5000; // Shipping cost
-         
-         // Load cart from Local Storage
-        $(document).ready(function() {
-            const storedCart = localStorage.getItem('cart');
-            if (storedCart) {
-                cart = JSON.parse(storedCart);
+            let cart = [];
+            let ongkir = 5000; // Shipping cost
+            let minimumPurchase = 5; // Default minimum purchase
+            let totalQuantity = 0; // Initialize total quantity
+
+            // Load cart from Local Storage
+            $(document).ready(function() {
+                const storedCart = localStorage.getItem('cart');
+                if (storedCart) {
+                    cart = JSON.parse(storedCart);
+                    updateCartUI();
+                }
+            });
+
+            function updateCartUI() {
+                const cartItemsContainer = $('#cart-items');
+                const cartSubtotalElement = $('#cart-subtotal');
+                const cartOngkirElement = $('#cart-ongkir');
+                const cartGrandtotalElement = $('#cart-grandtotal');
+                const badgeElement = $('.badge-custom'); // Select the badge element
+
+                const emptyCartWidget = $('#empty-cart');
+                const filledCartWidget = $('#filled-cart');
+
+                cartItemsContainer.empty();
+
+                let subtotal = 0;
+                totalQuantity = 0; // Reset total quantity
+
+                cart.forEach(item => {
+                    subtotal += item.price * item.quantity;
+                    totalQuantity += item.quantity; // Sum up the quantity of each item
+
+                    const itemElement = `
+                        <div class="cart-item">
+                            <img src="${item.image}" alt="Product Image" width="80" height="80">
+                            <div class="item-details">
+                                <a href="#" class="item-name">${item.name}</a>
+                                <div class="quantity">
+                                    <button class="quantity-btn" onclick="changeQuantity(${item.id}, -1)" ${item.quantity <= 1 ? 'disabled' : ''}>-</button>
+                                    <input type="text" readonly value="${item.quantity}" min="1">
+                                    <button class="quantity-btn" onclick="changeQuantity(${item.id}, 1)">+</button>
+                                </div>
+                                <span class="item-price">Rp. ${item.price.toLocaleString('id-ID')}</span>
+                            </div>
+                            <span class="remove-item" onclick="removeFromCart(${item.id})"><i class="fa fa-trash"></i></span>
+                        </div>
+                    `;
+                    cartItemsContainer.append(itemElement);
+                });
+
+                cartSubtotalElement.text(`Rp. ${subtotal.toLocaleString('id-ID')}`);
+                cartOngkirElement.text(`Rp. ${ongkir.toLocaleString('id-ID')}`);
+                const grandtotal = subtotal + ongkir;
+                cartGrandtotalElement.text(`Rp. ${grandtotal.toLocaleString('id-ID')}`);
+                badgeElement.text(totalQuantity); // Update the badge with the total quantity
+
+                // Toggle visibility based on cart items
+                if (cart.length === 0) {
+                    emptyCartWidget.show();
+                    filledCartWidget.hide();
+                } else {
+                    emptyCartWidget.hide();
+                    filledCartWidget.show();
+                }
+                // Save cart to Local Storage
+                localStorage.setItem('cart', JSON.stringify(cart));
+            }
+
+            function changeQuantity(productId, delta) {
+                const cartItem = cart.find(item => item.id === productId);
+                if (cartItem) {
+                    const newQuantity = cartItem.quantity + delta;
+                    if (newQuantity >= 1) {
+                        cartItem.quantity = newQuantity;
+                    }
+                    updateCartUI();
+                }
+            }
+
+            function removeFromCart(productId) {
+                cart = cart.filter(item => item.id !== productId);
                 updateCartUI();
             }
-        });
 
-         function updateCartUI() {
-             const cartItemsContainer = $('#cart-items');
-             const cartSubtotalElement = $('#cart-subtotal');
-             const cartOngkirElement = $('#cart-ongkir');
-             const cartGrandtotalElement = $('#cart-grandtotal');
-             const badgeElement = $('.badge-custom'); // Select the badge element
-             
-             const emptyCartWidget = $('#empty-cart');
-             const filledCartWidget = $('#filled-cart');
-             
-             cartItemsContainer.empty();
-             
-             let subtotal = 0;
-             let totalQuantity = 0; // Initialize total quantity
-             
-             cart.forEach(item => {
-                 subtotal += item.price * item.quantity;
-                 totalQuantity += item.quantity; // Sum up the quantity of each item
-                 
-                 const itemElement = `
-                     <div class="cart-item">
-                         <img src="${item.image}" alt="Product Image" width="80" height="80">
-                         <div class="item-details">
-                             <a href="#" class="item-name">${item.name}</a>
-                             <div class="quantity">
-                                 <button class="quantity-btn" onclick="changeQuantity(${item.id}, -1)" ${item.quantity <= 1 ? 'disabled' : ''}>-</button>
-                                 <input type="text" readonly value="${item.quantity}" min="1">
-                                 <button class="quantity-btn" onclick="changeQuantity(${item.id}, 1)">+</button>
-                             </div>
-                             <span class="item-price">Rp. ${item.price.toLocaleString('id-ID')}</span>
-                         </div>
-                         <span class="remove-item" onclick="removeFromCart(${item.id})"><i class="fa fa-trash"></i></span>
-                     </div>
-                 `;
-                 cartItemsContainer.append(itemElement);
-             });
-         
-             cartSubtotalElement.text(`Rp. ${subtotal.toLocaleString('id-ID')}`);
-             cartOngkirElement.text(`Rp. ${ongkir.toLocaleString('id-ID')}`);
-             const grandtotal = subtotal + ongkir;
-             cartGrandtotalElement.text(`Rp. ${grandtotal.toLocaleString('id-ID')}`);
-             badgeElement.text(totalQuantity); // Update the badge with the total quantity
-         
-             // Toggle visibility based on cart items
-             if (cart.length === 0) {
-                 emptyCartWidget.show();
-                 filledCartWidget.hide();
-             } else {
-                 emptyCartWidget.hide();
-                 filledCartWidget.show();
-             }
-              // Save cart to Local Storage
-            localStorage.setItem('cart', JSON.stringify(cart));
-         }
-         
-         function changeQuantity(productId, delta) {
-             const cartItem = cart.find(item => item.id === productId);
-             if (cartItem) {
-                 const newQuantity = cartItem.quantity + delta;
-                 if (newQuantity >= 1) {
-                     cartItem.quantity = newQuantity;
-                 }
-                 updateCartUI();
-             }
-         }
-         
-         function removeFromCart(productId) {
-             cart = cart.filter(item => item.id !== productId);
-             updateCartUI();
-         }
-         
-         $(document).on('click', '.add-to-cart', function(e) {
-             e.preventDefault();
-             
-             const isSideNavOpen = $("nav.navbar.bootsnav > .side").hasClass("on");
-             
-             if (!isSideNavOpen) {
-                 $("nav.navbar.bootsnav > .side").addClass("on");
-                 $("body").addClass("on-side");
-             }
-             
-             const productId = $(this).data('id');
-             const productName = $(this).data('name');
-             const productPrice = $(this).data('price');
-             const productImage = $(this).data('image');
-             const productUnit = $(this).data('unit');
-         
-             const cartItem = cart.find(item => item.id === productId);
-             
-             if (cartItem) {
-                 cartItem.quantity += 1; // Add 1 to the existing quantity
-             } else {
-                 cart.push({
-                     id: productId,
-                     name: productName,
-                     price: productPrice,
-                     quantity: 1, // Initialize with 1
-                     image: productImage,
-                     unit: productUnit
-                 });
-             }
-             
-             updateCartUI();
-         });
-         
-         $('#cart-form').submit(function(e) {
-             e.preventDefault();
-         
-             if (cart.length === 0) {
-                 alert('Keranjang kosong. Tambahkan produk sebelum checkout.');
-                 return;
-             }
+            $(document).on('click', '.add-to-cart', function(e) {
+                e.preventDefault();
+                const isSideNavOpen = $("nav.navbar.bootsnav > .side").hasClass("on");
+                // Check if a Jenis Pengambilan has been selected
+                const jenisPengambilan = $('#pengambilan').val();
+                if (!jenisPengambilan) {
+                    alert('Silakan pilih jenis pengambilan Anda terlebih dahulu!');
+                    return;
+                }
 
-             const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+                if (!isSideNavOpen) {
+                    $("nav.navbar.bootsnav > .side").addClass("on");
+                    $("body").addClass("on-side");
+                }
 
-             if (totalQuantity < 5) {
-                 alert('Total quantity harus minimal 5 untuk checkout.');
-                 return;
-             }
-         
-             const nama = $('#nama').val();
-             const phoneNumber = $('#phone_number').val();
-             const address = $('#address').val();
-         
-             if (!nama || !phoneNumber || !address) {
-                 alert('Silakan isi semua informasi pengiriman.');
-                 return;
-             }
-         
-             let orderDetails = `Nama: ${nama}\nTelfon: ${phoneNumber}\nAlamat: ${address}\n-----------------------------\n###### *DATA ORDER RICO* ######\n`;
-             orderDetails += `-----------------------------\n`;
-             cart.forEach(item => {
-                 orderDetails += `${item.name}: ${item.quantity} ${item.unit}\n`; // You can replace 'crt' with the unit of the item if needed
-             });
-         
-             const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-             const grandtotal = subtotal + ongkir;
-         
-             orderDetails += `-----------------------------\n`;
-             orderDetails += `Subtotal: Rp. ${subtotal.toLocaleString('id-ID')}\n`;
-             orderDetails += `Ongkir: Rp. ${ongkir.toLocaleString('id-ID')}\n`;
-             orderDetails += `*Grandtotal: Rp. ${grandtotal.toLocaleString('id-ID')}*\n`;
-         
-             const whatsappUrl = `https://api.whatsapp.com/send?phone=6282192059768&text=${encodeURIComponent(orderDetails)}`;
-             window.open(whatsappUrl, '_blank');
+                const productId = $(this).data('id');
+                const productName = $(this).data('name');
+                const productPrice = $(this).data('price');
+                const productImage = $(this).data('image');
+                const productUnit = $(this).data('unit');
 
-           // Clear cart and form, then refresh page
-            cart = [];
-            localStorage.removeItem('cart');
-            updateCartUI();
-            $('#cart-form')[0].reset();
-            localStorage.removeItem('formData');
-            location.reload();
-         });
-         
-     
+                const cartItem = cart.find(item => item.id === productId);
+
+                if (cartItem) {
+                    cartItem.quantity += 1; // Add 1 to the existing quantity
+                } else {
+                    cart.push({
+                        id: productId,
+                        name: productName,
+                        price: productPrice,
+                        quantity: 1, // Initialize with 1
+                        image: productImage,
+                        unit: productUnit
+                    });
+                }
+
+                updateCartUI();
+            });
+
+            $('#pengambilan').change(function() {
+                const jenisPengambilan = $(this).val();
+
+                if (jenisPengambilan === 'grosir') {
+                    minimumPurchase = 5;
+                    ongkir = 5000;
+                } else if (jenisPengambilan === 'satuan') {
+                    minimumPurchase = 1;
+                    ongkir = 0;
+                }
+
+                updateCartUI();
+            });
+
+            $('#cart-form').submit(function(e) {
+                e.preventDefault();
+            
+                // Check if a Jenis Pengambilan has been selected
+                const jenisPengambilan = $('#pengambilan').val();
+                if (!jenisPengambilan) {
+                    alert('Silakan pilih jenis pengambilan Anda!');
+                    return;
+                }
+            
+                // Ensure cart is not empty
+                if (cart.length === 0) {
+                    alert('Keranjang kosong. Tambahkan produk sebelum checkout.');
+                    return;
+                }
+            
+                const totalQuantity = cart.reduce((sum, item) => sum + item.quantity, 0);
+            
+                // Ensure the total quantity meets the minimum purchase requirement
+                if (totalQuantity < minimumPurchase) {
+                    alert(`Minimal pembelian adalah ${minimumPurchase} item untuk jenis pengambilan yang dipilih.`);
+                    return;
+                }
+            
+                const nama = $('#nama').val();
+                const phoneNumber = $('#phone_number').val();
+                const address = $('#address').val();
+            
+                // Ensure all necessary fields are filled out
+                if (!nama || !phoneNumber || !address) {
+                    alert('Silakan isi semua informasi pengiriman.');
+                    return;
+                }
+            
+                let orderDetails = `Nama: ${nama}\nTelfon: ${phoneNumber}\nAlamat: ${address}\n-----------------------------\n###### *DATA ORDER RICO* ######\n`;
+                orderDetails += `-----------------------------\n`;
+                cart.forEach(item => {
+                    orderDetails += `${item.name}: ${item.quantity} ${item.unit}\n`; 
+                });
+            
+                const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                const grandtotal = subtotal + ongkir;
+            
+                orderDetails += `-----------------------------\n`;
+                orderDetails += `Subtotal: Rp. ${subtotal.toLocaleString('id-ID')}\n`;
+                orderDetails += `Ongkir: Rp. ${ongkir.toLocaleString('id-ID')}\n`;
+                orderDetails += `*Grandtotal: Rp. ${grandtotal.toLocaleString('id-ID')}*\n`;
+            
+                // Determine which WhatsApp URL to use based on the selected Jenis Pengambilan
+                let whatsappUrl;
+            
+                if (jenisPengambilan === 'grosir') {
+                    whatsappUrl = `https://api.whatsapp.com/send?phone=6282192059768&text=${encodeURIComponent(orderDetails)}`;
+                } else if (jenisPengambilan === 'satuan') {
+                    whatsappUrl = `https://api.whatsapp.com/send?phone=6285399696005&text=${encodeURIComponent(orderDetails)}`;
+                }
+            
+                // Open WhatsApp URL in a new tab
+                window.open(whatsappUrl, '_blank');
+            
+                // Clear cart and form, then refresh the page
+                cart = [];
+                localStorage.removeItem('cart');
+                updateCartUI();
+                $('#cart-form')[0].reset();
+                localStorage.removeItem('formData');
+                location.reload();
+            });
+            
+
             window.changeQuantity = changeQuantity;
             window.removeFromCart = removeFromCart;
+
 
         /* ==================================================
             Nice Select Init

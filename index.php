@@ -186,7 +186,10 @@
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
                 <div class="widget">
                     <h4 class="title">pengiriman</h4>
-                    <p>Layanan pengantaran kami terbatas untuk wilayah Makassar dan sekitarnya dengan ongkos kirim Rp. 5.000 dengan minimal pembelian 5 unit.</p>
+                    <p>Layanan pengiriman kami untuk pembelian grosir tersedia di Makassar dengan ongkos kirim Rp. 5.000, 
+                        dengan minimal pembelian 5 unit. 
+                       <br> <br>
+                    Untuk pengambilan satuan, silakan kunjungi toko kami di Jl. G. Lompobattang No. 87.</p>
                 </div>
                 <div class="widget">
                     <!-- cart content -->
@@ -200,31 +203,43 @@
                         </div>
                         <div class="subtotal">
                             <span>Subtotal:</span>
-                            <span id="cart-subtotal">Rp. 0</span>
+                            <span id="cart-subtotal"></span>
                         </div>
                         <div class="ongkir">
                             <span>Ongkir:</span>
-                            <span id="cart-ongkir">Rp. 5.000</span>
+                            <span id="cart-ongkir"></span>
                         </div>
                         <b class="grandtotal">
                             <span>Grandtotal:</span>
-                            <span id="cart-grandtotal">Rp. 5.000</span>
+                            <span id="cart-grandtotal"></span>
                         </b>
                     </div>
                 </div>
-                <div class="widget">
+                <div class="widget appointment-box">
                     <h4 class="title">Alamat</h4>
-                    <div class="row gutter-1">
-                        <div class="col-sm-12">
-                            <input type="text" id="nama" class="form-control" placeholder="Nama..." required>  
+                    <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <select id="pengambilan" required>
+                                        <option value="grosir">Pengambilan Jumlah Grosir</option>
+                                        <option value="satuan">Pengambilan Jumlah Satuan</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" id="nama" class="form-control" placeholder="Nama..." required>  
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="number" id="phone_number" class="form-control" placeholder="Handphone..." required>  
+                                </div>
+                            </div>
+                            <div class="col-md-12 comments">
+                                <textarea name="" rows="5" id="address" class="form-control" placeholder="Alamat..." id="" required></textarea>
+                            </div>
                         </div>
-                        <div class="col-md-12">
-                            <input type="number" id="phone_number" class="form-control" placeholder="Handphone..." required>  
-                        </div>
-                        <div class="col-md-12 comments">
-                            <textarea name="" rows="5" id="address" class="form-control" placeholder="Alamat..." id="" required></textarea>
-                        </div>
-                    </div>
                     <div class="cart-actions">
                         <button type="submit" class="checkout-btn">Checkout</button>
                     </div>  
