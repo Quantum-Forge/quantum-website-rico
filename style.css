@@ -220,8 +220,7 @@ input, select {
   border-radius: inherit;
   box-shadow: inherit;
   min-height: 50px;
-  -webkit-appearance: none; /* Menghapus gaya default iOS */
-  appearance: none; /* Untuk browser lain */
+  box-sizing: border-box;
 }
 /* Default CSS */
 .container-half {
