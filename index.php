@@ -189,7 +189,7 @@
                     <p>Layanan pengiriman kami untuk pembelian grosir tersedia di Makassar dengan ongkos kirim Rp. 5.000, 
                         dengan minimal pembelian 5 unit. 
                        <br> <br>
-                    Untuk pengambilan satuan, silakan kunjungi toko kami di Jl. G. Lompobattang No. 87.</p>
+                    Untuk pengambilan satuan, silakan kunjungi toko kami di <br> <b>Jl. G. Lompobattang No. 87</b>.</p>
                 </div>
                 <div class="widget">
                     <!-- cart content -->
@@ -215,31 +215,31 @@
                         </b>
                     </div>
                 </div>
-                <div class="widget appointment-box">
+                <div class="widget">
                     <h4 class="title">Alamat</h4>
                     <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <select id="pengambilan" required>
-                                        <option value="grosir">Pengambilan Jumlah Grosir</option>
-                                        <option value="satuan">Pengambilan Jumlah Satuan</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="text" id="nama" class="form-control" placeholder="Nama..." required>  
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="number" id="phone_number" class="form-control" placeholder="Handphone..." required>  
-                                </div>
-                            </div>
-                            <div class="col-md-12 comments">
-                                <textarea name="" rows="5" id="address" class="form-control" placeholder="Alamat..." id="" required></textarea>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <select class="form-control" id="pengambilan" required>
+                                    <option value="grosir">Pengambilan Grosir</option>
+                                    <option value="satuan">Pengambilan Satuan</option>
+                                </select>
                             </div>
                         </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="text" id="nama" class="form-control" placeholder="Nama..." required>  
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input type="number" id="phone_number" class="form-control" placeholder="Handphone..." required>  
+                            </div>
+                        </div>
+                        <div class="col-md-12 comments">
+                            <textarea name="" rows="5" id="address" class="form-control" placeholder="Alamat..." id="" required></textarea>
+                        </div>
+                    </div>
                     <div class="cart-actions">
                         <button type="submit" class="checkout-btn">Checkout</button>
                     </div>  
@@ -281,7 +281,7 @@
                                             <div class="row">
                                             <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <select id="department" required>
+                                                        <select class="form-control" id="department" required>
                                                             <option disabled selected>Departemen...</option>
                                                             <option value="Perorangan">Perorangan</option>
                                                             <option value="Perusahaan">Perusahaan</option>
@@ -893,7 +893,6 @@
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/count-to.js"></script>
     <script src="assets/js/YTPlayer.min.js"></script>
-    <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.min.js"></script>
   

@@ -215,7 +215,7 @@ b, strong {
   box-shadow: inherit;
 }
 
-input {
+input, select {
   border: 1px solid #e7e7e7;
   border-radius: inherit;
   box-shadow: inherit;
@@ -3230,7 +3230,8 @@ body,
   border-radius: 5px;
 }
 
-.banner-area .appoinment-box input, 
+.banner-area .appoinment-box input,
+.banner-area .appoinment-box select,  
 .banner-area .appoinment-box .nice-select {
   border-color: #e7e7e7;
   -webkit-border-radius: 5px;
